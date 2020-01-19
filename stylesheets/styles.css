@@ -58,7 +58,6 @@ a small {
 .wrapper {
   width:800px;
   margin:0 auto;
-  height: 100%;
 }
 
 blockquote {
@@ -147,7 +146,6 @@ div#titles p {
 #left-section {
   width:180px;
   float:left;
-  position:fixed;
 }
 
 #left-section ul {
@@ -242,6 +240,32 @@ footer {
     width:auto;
     margin:0;
   }
+}
+
+@media print, screen and (max-width: 700px) {
+  header {
+    margin-bottom: 20px;
+  }
+ 
+  div#titles {
+   margin: 160px 0 20px;
+ }
+
+ section {
+   width: auto;
+   float: none;
+ }
+ #left-section {
+   width: auto;
+   float: none;
+   position: static;
+ }
+}
+
+@media print, screen and (max-width: 460px) {
+ div#titles {
+   margin: 130px 0 20px;
+ }
 }
 
 @media print {
