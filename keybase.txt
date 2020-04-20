@@ -1,0 +1,68 @@
+==================================================================
+https://keybase.io/morgangiraud
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://morgangiraud.com
+  * I am morgangiraud (https://keybase.io/morgangiraud) on keybase.
+  * I have a public key with fingerprint 9D2A 048C EED6 6145 DCAB  C207 7820 6527 07D0 11E3
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01013ae3bac751986d2ef0ccbffe43dd850ff97ed13469094f5a114df21fd49971ba0a",
+      "fingerprint": "9d2a048ceed66145dcabc2077820652707d011e3",
+      "host": "keybase.io",
+      "key_id": "7820652707d011e3",
+      "kid": "01013ae3bac751986d2ef0ccbffe43dd850ff97ed13469094f5a114df21fd49971ba0a",
+      "uid": "77be631f69c4364dd815b39824fb9e19",
+      "username": "morgangiraud"
+    },
+    "service": {
+      "hostname": "morgangiraud.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1587369392,
+  "expire_in": 157680000,
+  "prev": "8014d06dc9a2bc9efc6f486b111e1455f01a974e76a432559e14d4d44b5af3f2",
+  "seqno": 20,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.1.13
+Comment: https://keybase.io/crypto
+
+yMIoAnicrVJbSBRRGJ6tTJNsk6ILPURjEMUic+ZyZmajO0FGZnTZBwmXM3POrIPt
+zjYzbpqsERgkFUJJGVFUUNCKKWUXIcVSIjZ70ZAosjBfIsvsZsFSnbF687FzHg7n
+/N/3/f/3n783bzqT61vb3FL/MX9Pk+/x/YuVTNn5PW01rGbhajZYw1aQyYPsw8Rx
+wxUmZoMsBzggICJoSJcloCoQ88TgdF0zDCIKGCsSZxiqTDAQRKhyqmhICAARGzww
+sKiqMtAQh9gAa5ixCLHjthlzqayKecSJik4IhhCIEtaRpvOcLCs8ByVe5mTMAUAE
+Siy3HI9Bi9OQQwpNi77RS3iyvCnw/7nuyj95ZI1AARhQ1UUBipQPJE1QFV40NJUA
+1QM6xI6hKKHoqGVHUCxi2qgSs8kASyMJUydecz03U6AKdStKNeK25Vq6tY9Gy103
+7gQ9tlsd9+AHiBb+KxTWzBim/aSMBLEd04qxQUCRumt6ykBSZAGqgsoHWFIVN20S
+Nj2EJEOFo8vLQxJUUuGoYw5iXUW8pqvE0KEhKlADtJX0UySDA0iVRSJDJAq8JFGn
+IqZb1CRkCAbPetb2xyw2yFNRF0WopmNGYsittAmbfNC9dwbjy2VmZk3zBo3JnTX3
+3/gNRHKYK0vGOjuz/BPdG9zb994nV48cXVogzTuYnn2mREhcSMLlNeOZjrKsUMsb
+UPRMceq1iS+HP19KbrFPjQ0+HO9u8wsdObN8kdIVkAm0pDd92pyy298+el2b2tX/
+pHX0bOigX7pQ+soZuHp9YW3dcEKO/rhbt3PgxbvAqmhRQ2O/6TfT4drM6LYdjSe+
+fShev2bhYrvn1rpkne9n/bfQoYLLrUxHdnXftqcn83dPb0gt/z7WtEQoztyoyt4I
+mdZUaP6ylf13/M6xl9ubP5bP6estjjznx89V8AsWPdw6nBlq+TXUdK3na3tzXs7c
+uptDaN7p911HRo7nl6CuhvCOwYrS9G8Vr0h6
+=qXMA
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/morgangiraud
+
+==================================================================
