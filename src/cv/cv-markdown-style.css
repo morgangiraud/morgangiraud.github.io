@@ -9,13 +9,13 @@
 }
 
 @media print {
-  html, body {
-     border: 1px solid white;
-     height: 99%;
-     page-break-after: avoid !important;
-     page-break-before: avoid !important;
+  html,
+  body {
+    border: 1px solid white;
+    height: 99%;
+    page-break-after: avoid !important;
+    page-break-before: avoid !important;
   }
-
 }
 
 body {

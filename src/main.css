@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "EB Garamond", serif;
+  src: url("https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap");
+}

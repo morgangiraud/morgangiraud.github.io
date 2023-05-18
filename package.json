@@ -8,7 +8,8 @@
     "build": "yarn build:css && yarn build:cv",
     "build:css": "tailwindcss -i src/main.css -o ./public/style.css",
     "watch": "tailwindcss -i src/main.css -o ./public/style.css --watch",
-    "build:cv": "node src/cv/render.js"
+    "build:cv": "node src/cv/render.js",
+    "format": "prettier --write ./src ./index.html"
   },
   "dependencies": {
     "prettier": "^2.8.8",
