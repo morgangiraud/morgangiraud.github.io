@@ -27,6 +27,10 @@ To get it as a pdf, just go print it from your favorite browser.
 
 - I'm using prettier to ensure a cool code style, check the `package.json` file for associated commands.
 
+## Website banner
+
+I made a banner to advertise something about my situation. Depending on the situation make sure to comment/uncomment the seciont in `<!-- Banner: start -->` & `<!-- Banner: end -->`
+
 ## TODO
 
 - Website: Create a section for pet projects
