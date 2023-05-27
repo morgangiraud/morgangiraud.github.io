@@ -29,7 +29,6 @@ To get it as a pdf, just go print it from your favorite browser.
 
 ## TODO
 
-- Website: Simplify and clarify work section
 - Website: Create a section for pet projects
   - It should be a simple component with
     - image

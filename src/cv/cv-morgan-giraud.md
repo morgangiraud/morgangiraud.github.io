@@ -127,7 +127,7 @@ Worked as a freelance PHP/JavaScript developper, optimizing technical stacks, de
 Taught two semester-long classes: PHP/MySQL and Algorithm/JavaScript, introducing students to programming languages, ecosystems, and basic algorithm concepts.
 
 <div class="container">
-    <h3 class="left">Explee | Co-founder & CTO </h3>
+    <h3 class="left">Explee | Co-founder & CTO</h3>
     <div class="right">
         <em>2012 – 2021 | Location: Paris, France</em>
     </div>
