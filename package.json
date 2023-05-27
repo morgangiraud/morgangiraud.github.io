@@ -1,0 +1,26 @@
+{
+  "name": "morgangiraud.github.io",
+  "description": "Personal website of Morgan Giraud",
+  "repository": "git@github.com:morgangiraud/morgangiraud.github.io.git",
+  "author": "Mirgan Giraud",
+  "license": "MIT",
+  "scripts": {
+    "build": "yarn build:css && yarn build:cv",
+    "build:css": "tailwindcss -i src/main.css -o ./public/style.css",
+    "build:cv": "node src/cv/render.js",
+    "watch": "tailwindcss -i src/main.css -o ./public/style.css --watch",
+    "lint": "prettier --check .",
+    "format": "prettier --write ."
+  },
+  "dependencies": {
+    "tailwindcss": "^3.3.2"
+  },
+  "devDependencies": {
+    "highlight.js": "^11.8.0",
+    "markdown-it": "^13.0.1",
+    "markdown-it-container": "^3.0.0",
+    "mustache": "^4.2.0",
+    "npm-check-updates": "^16.10.12",
+    "prettier": "^2.8.8"
+  }
+}

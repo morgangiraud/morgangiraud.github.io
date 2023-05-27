@@ -1,109 +1,424 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Morgan Giraud</title>
 
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="chrome=1">
-  <title>Morgan Giraud - Machine Learning engineer, web developer & Entrepreneur</title>
-
-  <link rel="stylesheet" href="stylesheets/styles.css">
-  <link rel="stylesheet" href="stylesheets/github-light.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-  <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-</head>
-
-<body>
-  <div class="wrapper">
-    <header>
-      <div id="pic-wrapper">
-        <!-- <iframe id="profil-pic" src="https://sketchfab.com/models/fbc90c1343234a9cb8b59b4aa9e7b1d4/embed" frameborder="0" onmousewheel=""></iframe> -->
-        <img id="profil-pic"
-          src="https://en.gravatar.com/userimage/27393472/7691112bbc9c3efd9b9cb6b6657b3ddf.jpg?size=280">
-        <a target="_blank" href="https://github.com/morgangiraud">
-          <div id="i-github" class="social-icons"></div>
-        </a>
-        <a target="_blank" href="https://www.linkedin.com/in/morgangiraud/">
-          <div id="i-linkedin" class="social-icons"></div>
-        </a>
-        <a target="_blank" href="https://twitter.com/morgangiraud/">
-          <div id="i-twitter" class="social-icons"></div>
-        </a>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"
+    />
+    <link href="public/style.css" rel="stylesheet" />
+  </head>
+  <body class="bg-gray-200 font-sans leading-8">
+    <!-- Banner: start -->
+    <!-- <section>
+      <div class="fixed top-0 left-0 w-full bg-blue-500 text-white z-50">
+        <div class="container mx-auto px-6 py-3">
+          <div class="flex items-center justify-center">
+            <h1 class="font-bold text-2xl">
+              Currently looking for an remote ML engineering position or a Phd.
+              <a
+                href="mailto:contact@morgangiraud.com"
+                class="text-black hover:text-gray-600 font-semibold mt-2"
+                >Contact me!</a
+              >
+            </h1>
+          </div>
+        </div>
       </div>
+      <div class="h-32 sm:h-20 lg:h-12"></div>
+    </section> -->
+    <!-- Banner: end -->
 
+    <div class="container mx-auto px-4 py-10">
+      <div class="rounded-lg shadow-md">
+        <section class="bg-neutral-50 p-8 rounded-t-lg">
+          <div
+            class="flex items-center justify-center flex-col md:flex-row md:items-start md:justify-between"
+          >
+            <div class="order-2 md:order-1">
+              <h1
+                class="text-4xl font-bold mt-4 text-center md:text-left text-sky-700"
+              >
+                Morgan Giraud
+              </h1>
+              <h2
+                class="text-2xl font-semibold mt-2 text-center md:text-left text-gray-600"
+              >
+                ML engineer &amp; Tech lead
+              </h2>
+              <div
+                class="mt-4 flex items-center justify-center md:justify-start space-x-2"
+              >
+                <a href="https://github.com/morgangiraud" target="_blank">
+                  <i
+                    class="fa fa-github fa-2x text-gray-800 hover:text-blue-600"
+                  ></i>
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/morgangiraud/"
+                  target="_blank"
+                >
+                  <i
+                    class="fa fa-linkedin fa-2x text-gray-800 hover:text-blue-600"
+                  ></i>
+                </a>
+                <a href="https://twitter.com/morgangiraud/" target="_blank">
+                  <i
+                    class="fa fa-twitter fa-2x text-gray-800 hover:text-blue-600"
+                  ></i>
+                </a>
+                <a
+                  href="https://app.ens.domains/morgangiraud.eth"
+                  target="_blank"
+                >
+                  <svg
+                    viewBox="0 2 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    class="w-7 h-9 text-gray-800 hover:text-blue-600"
+                  >
+                    <path
+                      d="M2.80905 5.66275C3.03339 5.24475 3.35717 4.88836 3.75182 4.62507L10.375 0L3.58875 11.2218C3.58875 11.2218 2.99581 10.2197 2.76456 9.71265C2.47639 9.07515 2.33106 8.38235 2.33874 7.6828C2.34643 6.9832 2.50695 6.2938 2.80905 5.66275ZM0.0755828 13.4038C0.150363 14.4769 0.453553 15.5217 0.964848 16.4681C1.47615 17.4146 2.18375 18.2409 3.04028 18.8916L10.3661 24C10.3661 24 5.78263 17.3944 1.91666 10.8215C1.52527 10.127 1.26215 9.3678 1.13991 8.5801C1.08579 8.2234 1.08579 7.8606 1.13991 7.5039C1.03911 7.6907 0.843438 8.07315 0.843438 8.07315C0.451443 8.87265 0.184478 9.72755 0.0518628 10.6081C-0.0244662 11.5388 -0.0165282 12.4745 0.0755828 13.4038ZM18.7532 14.2933C18.516 13.7863 17.929 12.7842 17.929 12.7842L11.1547 24L17.7778 19.3779C18.1725 19.1146 18.4962 18.7583 18.7206 18.3402C19.0227 17.7092 19.1832 17.0197 19.1909 16.3202C19.1986 15.6206 19.0532 14.9278 18.7651 14.2903L18.7532 14.2933ZM21.4422 10.5991C21.3674 9.526 21.0642 8.48125 20.5529 7.5348C20.0416 6.58835 19.334 5.7621 18.4775 5.1113L11.1636 0C11.1636 0 15.744 6.60555 19.613 13.1785C20.0033 13.8732 20.2654 14.6323 20.3867 15.4199C20.4409 15.7766 20.4409 16.1394 20.3867 16.4961C20.4875 16.3093 20.6832 15.9269 20.6832 15.9269C21.0752 15.1274 21.3422 14.2724 21.4748 13.3919C21.5521 12.4613 21.5452 11.5256 21.454 10.5962L21.4422 10.5991Z"
+                    ></path>
+                  </svg>
+                </a>
+                <a href="mailto:contact@morgangiraud.com">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 2 24 24"
+                    fill="currentColor"
+                    class="w-7 h-9 text-gray-800 hover:text-blue-600"
+                  >
+                    <path
+                      d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z"
+                    />
+                    <path
+                      d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="order-1 md:order-2">
+              <img
+                class="w-48 h-48 rounded-full object-cover"
+                src="https://en.gravatar.com/userimage/27393472/7691112bbc9c3efd9b9cb6b6657b3ddf.jpg?size=280"
+                alt="Profile Picture"
+              />
+            </div>
+          </div>
+          <p class="mt-6 text-center text-gray-700">
+            Passionate ML & Web engineer, skilled in Python and its diverse set
+            of ML frameworks (TF, PyTorch, JAX). I Like to train deep nets and
+            understand what they are doing under the hood.
+            <br />
+            Also skilled in JS/TS and web app engineering, I like to build web
+            apps and tools around ML models.
+          </p>
+        </section>
 
-      <h1><a href="index.html">Morgan Giraud</a></h1>
-      <div id="titles">
-        <p>Machine Learning engineer (Freelance) - <a target="_blank" href="https://github.com/metaflow-ai">Metaflow</a>
-        </p>
-        <p>Developer & Co-founder (CTO) - <a target="_blank" href="https://explee.com">Explee</a></p>
+        <hr class="px-8" />
+
+        <section class="bg-neutral-50 p-8">
+          <div class="text-center">
+            <a
+              href="public/cv-morgan-giraud.pdf"
+              target="_blank"
+              class="bg-blue-600 hover:bg-blue-800 text-white font-semibold py-2 px-4 rounded"
+            >
+              Download CV (pdf)
+            </a>
+          </div>
+
+          <h3 class="text-xl font-semibold text-gray-800">Work experience</h3>
+
+          <section>
+            <div class="flex mt-4 justify-between">
+              <h3 class="text-left m-0 font-semibold">
+                WoW Studio | Tech lead
+              </h3>
+              <div
+                class="text-right w-0 h-0 invisible md:w-auto md:h-auto md:visible"
+              >
+                <em>Apr 2022 – Present | Location: Remote</em>
+              </div>
+            </div>
+            <p class="justify-center">
+              Leading a remote team of 5 technical professionals at
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/company/worldofwomennft"
+                class="text-blue-600 hover:text-blue-800"
+              >
+                WoW Studio
+              </a>
+              , a tech and media company that develops innovative experiences
+              and products using blockchains technolgies (Ethereum L1/L2).
+            </p>
+          </section>
+
+          <section>
+            <div class="flex mt-4 justify-between">
+              <h3 class="text-left m-0 font-semibold">Leniax | ML engineer</h3>
+              <div
+                class="text-right w-0 h-0 invisible md:w-auto md:h-auto md:visible"
+              >
+                <em>2020 - 2022 | Location: Remote</em>
+              </div>
+            </div>
+            <p>
+              Built
+              <a
+                target="_blank"
+                href="https://github.com/morgangiraud/leniax"
+                class="text-blue-600 hover:text-blue-800"
+              >
+                Leniax
+              </a>
+              , a JAX library to apply state-of-the-art quality-diversity
+              algorithms to the Continuous Cellular Automata Lenia
+            </p>
+          </section>
+
+          <section>
+            <div class="flex mt-4 justify-between">
+              <h3 class="text-left m-0 font-semibold">
+                ANITI | ML research internship
+              </h3>
+              <div
+                class="text-right w-0 h-0 invisible md:w-auto md:h-auto md:visible"
+              >
+                <em>Jun 2020 - Sep 2020 | Location: Toulouse, France</em>
+              </div>
+            </div>
+            <p>
+              <a
+                target="_blank"
+                href="https://www.youtube.com/watch?v=OpnSiUJC9Qw"
+                class="text-blue-600 hover:text-blue-800"
+              >
+                Research internship on Grounded Language Learning in simulated
+                environments
+              </a>
+              at ANITI (Artificial and Natural Intelligence Toulouse Institute)
+            </p>
+          </section>
+
+          <section>
+            <div class="flex mt-4 justify-between">
+              <h3 class="text-left m-0 font-semibold">
+                TF-encrypted | ML engineer
+              </h3>
+              <div
+                class="text-right w-0 h-0 invisible md:w-auto md:h-auto md:visible"
+              >
+                <em>2018 | Location: Remote</em>
+              </div>
+            </div>
+            <p>
+              Core original contributor to the Open Source library for
+              privacy-preserving Machine Learning in TensorFlow:
+              <a
+                target="_blank"
+                href="https://tf-encrypted.io/"
+                class="text-blue-600 hover:text-blue-800"
+              >
+                tf-encrypted
+              </a>
+              accepted at the NeurIPS 2018 PPML workshop.
+              <a
+                target="_blank"
+                href="https://arxiv.org/abs/1810.08130"
+                class="text-blue-600 hover:text-blue-800"
+                >Associated research paper</a
+              >
+            </p>
+          </section>
+
+          <section>
+            <div class="flex mt-4 justify-between">
+              <h3 class="text-left m-0 font-semibold">
+                Freelance | ML engineer
+              </h3>
+              <div
+                class="text-right w-0 h-0 invisible md:w-auto md:h-auto md:visible"
+              >
+                <em>2016 - 2019 | Location: Remote</em>
+              </div>
+            </div>
+            <p>
+              Explored various machine learning techniques, including GANs, DRL,
+              Unsupervised MLP, style transfer. (Check the projects section)
+              <br />
+              I also
+              <a
+                target="_blank"
+                href="https://morgangiraud.medium.com/"
+                class="text-blue-600 hover:text-blue-800"
+              >
+                blogged
+              </a>
+              a bit!
+            </p>
+          </section>
+
+          <section>
+            <div class="flex mt-4 justify-between">
+              <h3 class="text-left m-0 font-semibold">
+                EatWith, MyLittleParis | Web Developer
+              </h3>
+              <div
+                class="text-right w-0 h-0 invisible md:w-auto md:h-auto md:visible"
+              >
+                <em>Jul 2015 – Jan 2016 | Location: Paris, France</em>
+              </div>
+            </div>
+            <p>
+              Worked as a freelance PHP/JavaScript developper, optimizing
+              technical stacks, developping applications and structuring
+              technical processes for both clients.
+            </p>
+          </section>
+
+          <section>
+            <div class="flex mt-4 justify-between">
+              <h3 class="text-left m-0 font-semibold">ECV Digital | Teacher</h3>
+              <div
+                class="text-right w-0 h-0 invisible md:w-auto md:h-auto md:visible"
+              >
+                <em>Oct 2015 – Jan 2016 | Location: Paris, France</em>
+              </div>
+            </div>
+            <p>
+              Taught two semester-long classes: PHP/MySQL and
+              Algorithm/JavaScript, introducing students to programming
+              languages, ecosystems, and basic algorithm concepts.
+            </p>
+          </section>
+
+          <section>
+            <div class="flex mt-4 justify-between">
+              <h3 class="text-left m-0 font-semibold">
+                Explee | Co-founder & CTO
+              </h3>
+              <div
+                class="text-right w-0 h-0 invisible md:w-auto md:h-auto md:visible"
+              >
+                <em>2012 – 2021 | Location: Paris, France</em>
+              </div>
+            </div>
+            <p>
+              Co-founded the startup Explee as its CTO: an online platform for
+              creating animated videos
+            </p>
+          </section>
+        </section>
+
+        <!-- <section class="bg-gray-100 p-8">
+          
+          <h3 class="text-2xl font-semibold text-gray-800 mb-3">Projects</h3>
+
+          <div class="grid grid-cols-3 gap-4">
+            <div class="rounded overflow-hidden shadow-lg">
+              <img
+                class="w-full h-48 object-cover"
+                src="https://via.placeholder.com/500"
+                alt="Project 1"
+              />
+              <div class="bg-neutral-50 px-6 py-4">
+                <div class="font-bold text-xl mb-2">Project 1</div>
+                <p class="text-gray-700 text-base">
+                  This is a brief description of Project 1. It was a very
+                  exciting project that involved many interesting challenges.
+                </p>
+              </div>
+            </div>
+
+            <div class="rounded overflow-hidden shadow-lg">
+              <img
+                class="w-full h-48 object-cover"
+                src="https://via.placeholder.com/500"
+                alt="Project 1"
+              />
+              <div class="bg-neutral-50 px-6 py-4">
+                <div class="font-bold text-xl mb-2">Project 1</div>
+                <p class="text-gray-700 text-base">
+                  This is a brief description of Project 1. It was a very
+                  exciting project that involved many interesting challenges.
+                </p>
+              </div>
+            </div>
+
+            <div class="rounded overflow-hidden shadow-lg">
+              <img
+                class="w-full h-48 object-cover"
+                src="https://via.placeholder.com/500"
+                alt="Project 1"
+              />
+              <div class="bg-neutral-50 px-6 py-4">
+                <div class="font-bold text-xl mb-2">Project 1</div>
+                <p class="text-gray-700 text-base">
+                  This is a brief description of Project 1. It was a very
+                  exciting project that involved many interesting challenges.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section> -->
+
+        <!-- <section class="bg-neutral-50 p-8">
+          <h3 class="text-2xl font-semibold text-gray-800 mb-3">Blog Posts</h3>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="rounded overflow-hidden shadow-lg">
+              <div class="bg-neutral-50 px-6 py-4">
+                <div class="font-bold text-xl mb-2">Blog Post 1</div>
+                <p class="text-gray-700 text-base">
+                  This is a short summary of Blog Post 1. This post discusses
+                  some really interesting topics.
+                </p>
+                <a href="#" class="text-blue-500 hover:text-blue-800"
+                  >Read More</a
+                >
+              </div>
+            </div>
+          </div>
+        </section> -->
+
+        <section class="bg-gray-100 p-8 text-center rounded-b-lg">
+          <p class="text-lg text-gray-700">
+            Interested in working together? Get in touch:
+          </p>
+          <a
+            href="mailto:contact@morgangiraud.com"
+            class="text-blue-600 hover:text-blue-800 font-semibold mt-2"
+            >contact@morgangiraud.com</a
+          >
+          <p class="text-gray-700 mt-8">
+            © Morgan Giraud -
+            <script>
+              document.write(new Date().getFullYear());
+            </script>
+          </p>
+        </section>
       </div>
-    </header>
+    </div>
 
-    <section id="left-section">
-      <a target="_blank" href="cv-morgan-giraud.pdf">
-        <ul>CV (pdf)</ul>
-      </a>
-      <!-- <a href="research.html">
-          <ul>Research</ul>
-        </a> -->
-      <a target="_blank" href="https://medium.com/@morgangiraud">
-        <ul>Blog</ul>
-      </a>
-      <a href="ecvd-js">
-        <ul>JS course</ul>
-      </a>
-      <a href="ecvd-php">
-        <ul>PHP Course</ul>
-      </a>
-      <!-- <a href="personal.html">
-          <ul>Personal</ul>
-        </a> -->
-    </section>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-XZNN9B0RGP"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-    <section>
-      <h3>
-        Hi!
-      </h3>
-      <p>
-        My name is Morgan, I’m currently doing machine learning and open-source work as a freelance.
-        I provide my machine learning engineering skills in Python and
-        PyTorch/TensorFlow.
-        <br>
-        I’m actively looking for a more research-focused position in the field.
-        <br>
-        In the meantime, I'm alternating between reading papers, open-source projects, freelancing and blogging.
-      </p>
-      <p>
-        Before that, I was a web developer and entrepreneur. I co-founded the company Explee as a CTO where I built
-        the whole technical stack. I also spent some times teaching PHP and JavaScript.
-      </p>
-      <p>
-        My natural optimism, curiosity and hunger for learning make me resilient to sparse rewards when working on hard
-        problems.
-        <br>
-        To gather intuitions, I like to be playful in my work and follow an iterative journey.
-        When it is time to go to production, I like to follow opinionated engineering best practices.
-      </p>
-
-    </section>
-  </div>
-  <footer>
-    © Morgan Giraud - 2020
-  </footer>
-  <script>
-    (function (i, s, o, g, r, a, m) {
-      i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
-        (i[r].q = i[r].q || []).push(arguments)
-      }, i[r].l = 1 * new Date(); a = s.createElement(o),
-        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
-    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-
-    ga('create', 'UA-75284184-1', 'auto');
-    ga('send', 'pageview');
-
-  </script>
-</body>
-
+      gtag("config", "G-XZNN9B0RGP");
+    </script>
+  </body>
 </html>
