@@ -4,8 +4,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'eb-garamond': ['EB Garamond'],
-      }
+        "eb-garamond": ["EB Garamond"],
+      },
     },
   },
   plugins: [],

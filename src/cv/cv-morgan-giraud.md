@@ -4,7 +4,7 @@
         <h2 style="margin-top: 0">ML engineer and Tech lead</h2>
     </div>
     <div class="right">
-        10 faubourg des Annonciades.</br>74000, Annecy. France.</br>+33610574116</br><a href="mailto:contact@morgangiraud.com">contact@morgangiraud.com</a></br><a href="https://morgangiraud.com">https://morgangiraud.com</a></br><a href="https://github.com/morgangiraud">https://github.com/morgangiraud</a>
+        10 faubourg des Annonciades.<br/>74000, Annecy. France.<br/>+33610574116<br/><a href="mailto:contact@morgangiraud.com">contact@morgangiraud.com</a><br/><a href="https://morgangiraud.com">https://morgangiraud.com</a><br/><a href="https://github.com/morgangiraud">https://github.com/morgangiraud</a>
     </div>
 </div>
 
