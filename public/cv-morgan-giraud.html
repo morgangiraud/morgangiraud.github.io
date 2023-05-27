@@ -61,12 +61,20 @@ h2 {
 h3 {
   font-size: 14pt;
   font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+h4,
+h5 {
+  margin-bottom: 0;
 }
 
 /* Containers */
 div.container {
   display: flex;
   justify-content: space-between;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .left {
@@ -78,9 +86,14 @@ div.container {
   text-align: right;
 }
 
+p {
+  margin-top: 0rem;
+  margin-bottom: 0.5rem;
+}
 /* Lists */
 ul,
 ol {
+  margin-top: 0;
   padding-left: 1.5em;
 }
 
@@ -161,52 +174,51 @@ code {
     <div class="container">
     <div class="left">
         <div class="h1">MORGAN GIRAUD</div>
-        <h2 style="margin-top: 0">ML engineer and Tech lead</h2>
+        <h2 style="margin: 0">ML engineer and Tech lead</h2>
     </div>
     <div class="right">
-        10 faubourg des Annonciades.<br/>74000, Annecy. France.<br/>+33610574116<br/><a href="mailto:contact@morgangiraud.com">contact@morgangiraud.com</a><br/><a href="https://morgangiraud.com">https://morgangiraud.com</a><br/><a href="https://github.com/morgangiraud">https://github.com/morgangiraud</a>
+        10 faubourg des Annonciades<br/>74000, Annecy, France.<br/><a href="tel:+33610574116">+33610574116</a><br/><a href="mailto:contact@morgangiraud.com">contact@morgangiraud.com</a><br/><a href="https://morgangiraud.com">https://morgangiraud.com</a>
     </div>
 </div>
 <hr />
-<h3>PROFILE</h3>
-<p>Passionate ML &amp; Web engineer with a background in machine learning engineering, web development, and entrepreneurship. Highly motivated to work and conduct research in machine learning to tackle its challenging issues. Skilled in Python, and its diverse set of ML frameworks (TF, PyTorch, JAX). Proficient in working with diverse teams.</p>
-<p>Notable experiences include:</p>
+<h3>PROFILE SUMMARY</h3>
+<p>Passionate ML &amp; Web engineer, skilled in Python, and its diverse set of ML frameworks (TF, PyTorch, JAX). Also skilled in JS/TS and web app engineering. Proficient in working with on-site and remote diverse teams.</p>
+<p>Notable experiences:</p>
 <ul>
 <li>Being a core original contributor to the open-source library, <a href="https://tf-encrypted.io/">tf-encrypted</a>, for privacy-preserving machine learning in TensorFlow, which was accepted at the NeurIPS 2018 PPML workshop</li>
 <li>My research internship on Gounded language learning and modality fusion for which you can find the <a href="https://docs.google.com/presentation/d/1MKxizuQflOzxMjbv_sUYUOTsE_oWZ-g02TQzwOFdNtg">annotated slides here</a></li>
+<li>Founded a company in 2012 called Explee, an online platform for creating animated videos.</li>
 </ul>
 <h3>RESEARCH &amp; ENGINEERING INTERESTS</h3>
 <ul>
-<li>Explainable Artificial Intelligence (XAI): With an engineering focus, I am interested in developing tools to understand neural network learning and inference dynamics.</li>
-<li>ML scalability: Interested in exploring innovative solutions for faster training and reducing resource requirements.</li>
+<li>Explainable Artificial Intelligence (XAI) with an engineering focus: I am interested in developing tools to understand neural network training and inference dynamics.</li>
+<li>ML scalability: Interested in building scalable infrastructure for ML research and deployments.</li>
 </ul>
 <h3>SKILLS</h3>
 <ul>
 <li>Proficient in Python with experience in TensorFlow, Pytorch, and Jax (Local and Distributed Settings)</li>
-<li>Proficient in JavaScript, PHP</li>
-<li>Average knowledge of C++ and Golang.</li>
-<li>Notion of GPU programming.</li>
-<li>Strong knowledge in infrastructure engineering and management</li>
+<li>Proficient in TypeScript/JavaScript, PHP</li>
+<li>Average knowledge of Golang.</li>
+<li>Notion of C++ and GPU programming.</li>
+<li>Strong knowledge in infrastructure engineering and management (deployments, db)</li>
 <li>Fluent in French and English, with limited working proficiency in Italian.</li>
 </ul>
 <div class="page"></div>
 <h2>WORK EXPERIENCE (ordered by date)</h2>
 <div class="container">
-    <h3 class="left">WoW Studio | Lead tech </h3>
+    <h3 class="left">WoW Studio | Tech lead </h3>
     <div class="right">
         <em>Apr 2022 – Present | Location: Remote</em>
     </div>
 </div>
-<p>Leading a team of 6 technical professionals at <a href="https://www.linkedin.com/company/worldofwomennft/">WoW Studio</a>, a tech and media company that develops innovative experiences and products.</p>
+<p>Leading a remote team of 5 technical professionals at <a href="https://www.linkedin.com/company/worldofwomennft/">WoW Studio</a>, a tech and media company that develops innovative experiences and products using blockchains technolgies (Ethereum L1/L2).</p>
 <ul>
+<li>Remotely led the development of the highly successful WoWG NFT collection.</li>
 <li>Actively participated in the developer hiring process by conducting interviews and creating technical assessments to evaluate candidates, ensuring a highly skilled team.</li>
-<li>Delivered <a href="https://www.worldofwomen.art/">multiple</a> <a href="https://artfest.worldofwomen.art/">products</a> by coordinating and supervising developers' work.</li>
-<li>Established effective processes for task organization, promoting collaboration and transparent communication within the team.</li>
-<li>Served as the main contact for technical matters, offering guidance and support to team members to enhance their skills and overall efficiency.</li>
+<li>Delivered <a href="https://www.worldofwomen.art/">multiple</a> <a href="https://artfest.worldofwomen.art/">web application</a> by coordinating and supervising developers' work.</li>
+<li>Established effective processes for task organization, promoting collaboration and transparent communication within the remote team. (main tools: Asana and Github)</li>
+<li>Served as the main contact for technical matters, offering guidance, support and code reviews to team members to enhance their skills and overall efficiency.</li>
 </ul>
-<!-- #### Key project
-
-- WoWG NFT Collection: Led the development of a complex and highly suceesful NFT collection and its minting experience, ensuring rigorous testing and bug-free deployment. The successful launch generated significant revenue for the company and enabled team expansion. -->
 <div class="container">
     <h3 class="left">Leniax | ML engineer</h3>
     <div class="right">
@@ -215,7 +227,7 @@ code {
 </div>
 <p>Built <a href="https://github.com/morgangiraud/leniax">Leniax</a>, a JAX library to apply state-of-the-art quality-diversity algorithms to the Continuous Cellular Automata Lenia:</p>
 <ul>
-<li>Explored an under-researched direction in the Continuous Cellular Automata Lenia domain as the primary developer of Leniax, focusing on both algorithm design and implementation.</li>
+<li>Explored the under-researched direction of QD algorithms in the Lenia domain, focusing on both algorithm design and implementation.</li>
 <li>Organized interdisciplinary research meetings with mathematicians and ML researchers.</li>
 <li>Published Leniax, a fully-fledged software to facilitate the use of QD algorithms on Lenia.</li>
 </ul>
@@ -237,7 +249,7 @@ code {
         <em>2018 | Location: Remote</em>
     </div>
 </div>
-<p>Core original contributor to the OpenSource library for privacy-preserving Machine Learning in TensorFlow: <a href="https://tf-encrypted.io/">tf-encrypted</a> accepted at the NeurIPS 2018 PPML workshop. <a href="https://arxiv.org/abs/1810.08130">Associated research paper</a></p>
+<p>Core original contributor to the Open Source library for privacy-preserving Machine Learning in TensorFlow: <a href="https://tf-encrypted.io/">tf-encrypted</a> accepted at the NeurIPS 2018 PPML workshop. <a href="https://arxiv.org/abs/1810.08130">Associated research paper</a></p>
 <ul>
 <li>Contributed to the prototype that enabled <a href="https://capeprivacy.com/">Cape Privacy</a> to secure its first seed round of funding.</li>
 <li>Developed discretized functions for neural networks, enabling training and inference to be conducted in cryptographic settings for enhanced privacy.</li>
@@ -255,15 +267,15 @@ code {
 <li>GANs for video compression (2019)</li>
 <li><a href="https://github.com/morgangiraud/openai-rl">Deep reinforcement learning with world models</a> (2017)</li>
 <li>Unsupervised NLP (embedding, token prediction) and CV style transfert (2016)</li>
-<li>Blogger at https://medium.com/@morgangiraud (Main subjects: ML engineering, machine learning, entrepreneurship in research-focused environments)</li>
+<li>Blogger at https://medium.com/@morgangiraud (Main subject: ML engineering)</li>
 </ul>
 <div class="container">
-    <h3 class="left"> VizEat, MyLittleParis | Web Developer</h3>
+    <h3 class="left"> EatWith, MyLittleParis | Web Developer</h3>
     <div class="right">
         <em>Jul 2015 – Jan 2016 | Location: Paris, France</em>
     </div>
 </div>
-<p>Worked as a PHP/JavaScript freelancer, optimizing technical stacks and structuring technical processes for clients.</p>
+<p>Worked as a freelance PHP/JavaScript developper, optimizing technical stacks, developping applications and structuring technical processes for both clients.</p>
 <div class="container">
     <h3 class="left">ECV Digital | Teacher</h3>
     <div class="right">
@@ -272,17 +284,18 @@ code {
 </div>
 <p>Taught two semester-long classes: PHP/MySQL and Algorithm/JavaScript, introducing students to programming languages, ecosystems, and basic algorithm concepts.</p>
 <div class="container">
-    <h3 class="left">Explee | CTO (Co-founder)</h3>
+    <h3 class="left">Explee | Co-founder & CTO </h3>
     <div class="right">
         <em>2012 – 2021 | Location: Paris, France</em>
     </div>
 </div>
-<p>Co-founded the startup Explee as its CTO:</p>
+<p>Co-founded the startup Explee as its CTO: an online platform for creating animated videos.</p>
 <ul>
-<li>Developed and managed the entire technical stack for Explee, an online platform for creating animated videos.</li>
-<li>Built and managed a complex distributed web application infrastructure using AWS, Docker, and Kubernetes.</li>
-<li>Designed and developed the JavaScript video rendering engine</li>
+<li>Developed the entire technical stack for Explee.</li>
+<li>Built and managed a complex distributed web application infrastructure using AWS, Docker.</li>
+<li>Designed and developed the video rendering engine in JavaScript.</li>
 <li>Created computer vision algorithms for automatic drawing.</li>
+<li>Designed an managed the MySQL database.</li>
 </ul>
 <h2>EDUCATION:</h2>
 <div class="container">
@@ -293,7 +306,7 @@ code {
 </div>
 <p>Leading graduate school of engineering and part of the Institut Mines-Télécom, a top institute for Information and Communication Technology in France.</p>
 <div class="container">
-    <h3 class="left"> Berthollet - Classes Prepa</h3>
+    <h3 class="left"> Berthollet - Classes preparatoire</h3>
     <div class="right">
         <em>2007 - 2009 | Location: Annecy, France.</em>
     </div>
