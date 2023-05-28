@@ -30,16 +30,3 @@ To get it as a pdf, just go print it from your favorite browser.
 ## Website banner
 
 I made a banner to advertise something about my situation. Depending on the situation make sure to comment/uncomment the seciont in `<!-- Banner: start -->` & `<!-- Banner: end -->`
-
-## TODO
-
-- Website: Create a section for pet projects
-  - It should be a simple component with
-    - image
-    - smal desc
-    - longer desc (expand)
-    - url
-- Website: Create a section for my blog posts
-  - list of Date - title - url
-- Website: Create a section "other"
-  - Gather what other thing about me could be interesting

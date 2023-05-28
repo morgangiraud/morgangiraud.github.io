@@ -104,7 +104,7 @@
             </div>
             <div class="order-1 md:order-2">
               <img
-                class="w-48 h-48 rounded-full object-cover"
+                class="w-56 h-48 rounded-full object-cover"
                 src="https://en.gravatar.com/userimage/27393472/7691112bbc9c3efd9b9cb6b6657b3ddf.jpg?size=280"
                 alt="Profile Picture"
               />
@@ -123,7 +123,7 @@
         <hr class="px-8" />
 
         <section class="bg-neutral-50 p-8">
-          <div class="text-center">
+          <div class="text-center mb-4">
             <a
               href="public/cv-morgan-giraud.pdf"
               target="_blank"
@@ -317,77 +317,338 @@
           </section>
         </section>
 
-        <!-- <section class="bg-gray-100 p-8">
-          
+        <section class="bg-gray-100 p-8">
           <h3 class="text-2xl font-semibold text-gray-800 mb-3">Projects</h3>
 
           <div class="grid grid-cols-3 gap-4">
-            <div class="rounded overflow-hidden shadow-lg">
+            <section class="rounded overflow-hidden shadow-lg">
               <img
                 class="w-full h-48 object-cover"
-                src="https://via.placeholder.com/500"
-                alt="Project 1"
+                src="public/images/cellular-conquest.png"
               />
-              <div class="bg-neutral-50 px-6 py-4">
-                <div class="font-bold text-xl mb-2">Project 1</div>
-                <p class="text-gray-700 text-base">
-                  This is a brief description of Project 1. It was a very
-                  exciting project that involved many interesting challenges.
-                </p>
-              </div>
-            </div>
 
-            <div class="rounded overflow-hidden shadow-lg">
-              <img
-                class="w-full h-48 object-cover"
-                src="https://via.placeholder.com/500"
-                alt="Project 1"
-              />
               <div class="bg-neutral-50 px-6 py-4">
-                <div class="font-bold text-xl mb-2">Project 1</div>
-                <p class="text-gray-700 text-base">
-                  This is a brief description of Project 1. It was a very
-                  exciting project that involved many interesting challenges.
-                </p>
-              </div>
-            </div>
-
-            <div class="rounded overflow-hidden shadow-lg">
-              <img
-                class="w-full h-48 object-cover"
-                src="https://via.placeholder.com/500"
-                alt="Project 1"
-              />
-              <div class="bg-neutral-50 px-6 py-4">
-                <div class="font-bold text-xl mb-2">Project 1</div>
-                <p class="text-gray-700 text-base">
-                  This is a brief description of Project 1. It was a very
-                  exciting project that involved many interesting challenges.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section> -->
-
-        <!-- <section class="bg-neutral-50 p-8">
-          <h3 class="text-2xl font-semibold text-gray-800 mb-3">Blog Posts</h3>
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <div class="rounded overflow-hidden shadow-lg">
-              <div class="bg-neutral-50 px-6 py-4">
-                <div class="font-bold text-xl mb-2">Blog Post 1</div>
-                <p class="text-gray-700 text-base">
-                  This is a short summary of Blog Post 1. This post discusses
-                  some really interesting topics.
-                </p>
-                <a href="#" class="text-blue-500 hover:text-blue-800"
-                  >Read More</a
+                <a
+                  target="_blank"
+                  href="https://github.com/morgangiraud/cellular-conquest"
+                  class="text-blue-600 hover:text-blue-800"
                 >
+                  <div class="font-bold text-xl mb-2">
+                    Cellular conquest (2023)
+                  </div>
+                </a>
+                <p class="text-gray-700 text-base">
+                  <a
+                    target="_blank"
+                    href="https://cellular-conquest.morgangiraud.com/"
+                    class="text-blue-600 hover:text-blue-800"
+                    >Web app game</a
+                  >
+                  that hosts a strategy game based on the principles of cellular
+                  automata. The game combines elements of strategy, territory
+                  control, and the biological theory of life as outlined by John
+                  Conway's Game of Life.
+                </p>
               </div>
-            </div>
-          </div>
-        </section> -->
+            </section>
 
-        <section class="bg-gray-100 p-8 text-center rounded-b-lg">
+            <section class="rounded overflow-hidden shadow-lg">
+              <video
+                class="w-full h-48 object-cover"
+                src="public/images/leniax.mp4"
+                autoplay
+                loop
+                muted
+                playsinline
+              ></video>
+
+              <div class="bg-neutral-50 px-6 py-4">
+                <a
+                  target="_blank"
+                  href="https://github.com/morgangiraud/leniax"
+                  class="text-blue-600 hover:text-blue-800"
+                >
+                  <div class="font-bold text-xl mb-2">Leniax (2022)</div>
+                </a>
+                <p class="text-gray-700 text-base">
+                  Leniax is a
+                  <a
+                    target="_blank"
+                    href="https://chakazul.github.io/lenia.html"
+                    class="text-blue-600 hover:text-blue-800"
+                    >Lenia</a
+                  >
+                  simulation library powered by JAX. It can efficiently
+                  simulate, render Lenia worlds and compute statistics.
+                  <a
+                    target="_blank"
+                    href="https://twitter.com/morgangiraud/status/1513906792723619847"
+                    class="text-blue-600 hover:text-blue-800"
+                    >More here</a
+                  >
+                </p>
+              </div>
+            </section>
+
+            <section class="rounded overflow-hidden shadow-lg">
+              <img
+                class="w-full h-48 object-cover"
+                src="public/images/gll.png"
+                alt="Project 1"
+              />
+              <div class="bg-neutral-50 px-6 py-4">
+                <a
+                  target="_blank"
+                  href="https://github.com/ruflab/soc"
+                  class="text-blue-600 hover:text-blue-800"
+                >
+                  <div class="font-bold text-xl mb-2">
+                    Grounded language learning in the game Settlers of Catan
+                    (2020)
+                  </div>
+                </a>
+                <p class="text-gray-700 text-base">
+                  In this work, I explore how to ground language into the game
+                  Settlers Of Catan. I'm using a JAVA simulator containings bots
+                  to generate game trajectories which I sue to learn a world
+                  model. Finally, I explore how I can use this world model to
+                  ground language.
+                  <a
+                    target="_blank"
+                    href="https://docs.google.com/presentation/d/1MKxizuQflOzxMjbv_sUYUOTsE_oWZ-g02TQzwOFdNtg/edit#slide=id.g9cbf3d1cb2_0_224"
+                    class="text-blue-600 hover:text-blue-800"
+                    >Check the annotated slides</a
+                  >
+                </p>
+              </div>
+            </section>
+
+            <section class="rounded overflow-hidden shadow-lg">
+              <img
+                class="w-full h-48 object-cover"
+                src="public/images/gym-retro.webp"
+                alt="openai-rl"
+              />
+              <div class="bg-neutral-50 px-6 py-4">
+                <a
+                  target="_blank"
+                  href="https://github.com/morgangiraud/openai-rl"
+                  class="text-blue-600 hover:text-blue-800"
+                >
+                  <div class="font-bold text-xl mb-2">Openai-rl (2017)</div>
+                </a>
+                <p class="text-gray-700 text-base">
+                  A set of
+                  <a
+                    target="_blank"
+                    href="https://github.com/morgangiraud/openai-rl/tree/master/agents"
+                    class="text-blue-600 hover:text-blue-800"
+                    >RL agents</a
+                  >
+                  from tabular to Deep Q Learning and policy gradient ones
+                  including worlds models. (Made using TF 1)
+                </p>
+              </div>
+            </section>
+
+            <section class="rounded overflow-hidden shadow-lg">
+              <img
+                class="w-full h-48 object-cover"
+                src="public/images/boobabot.jpg"
+                alt="openai-rl"
+              />
+              <div class="bg-neutral-50 px-6 py-4">
+                <a
+                  target="_blank"
+                  href="https://github.com/metaflow-ai/BoobaBot"
+                  class="text-blue-600 hover:text-blue-800"
+                >
+                  <div class="font-bold text-xl mb-2">Boobabot (2016)</div>
+                </a>
+                <p class="text-gray-700 text-base">
+                  This project is about developping an A.I. rap writer that can
+                  write a word/sentence/para/full song or autocomplete your
+                  writing to help you find some inspiration!
+                </p>
+              </div>
+            </section>
+
+            <section class="rounded overflow-hidden shadow-lg">
+              <img
+                class="w-full h-48 object-cover"
+                src="public/images/neural_style.png"
+                alt="openai-rl"
+              />
+              <div class="bg-neutral-50 px-6 py-4">
+                <a
+                  target="_blank"
+                  href="https://github.com/metaflow-ai/neural_style"
+                  class="text-blue-600 hover:text-blue-800"
+                >
+                  <div class="font-bold text-xl mb-2">Neural style (2016)</div>
+                </a>
+                <p class="text-gray-700 text-base">
+                  A journey to explore neural style algorithm: From GPU to
+                  Mobile!
+                </p>
+              </div>
+            </section>
+
+            <section class="rounded overflow-hidden shadow-lg">
+              <img
+                class="w-full h-48 object-cover"
+                src="public/images/hive.png"
+                alt="openai-rl"
+              />
+              <div class="bg-neutral-50 px-6 py-4">
+                <a
+                  target="_blank"
+                  href="https://github.com/metaflow-ai/hive"
+                  class="text-blue-600 hover:text-blue-800"
+                >
+                  <div class="font-bold text-xl mb-2">Hive (2016)</div>
+                </a>
+                <p class="text-gray-700 text-base">
+                  A simple bees larvae detector in Deep learning
+                </p>
+              </div>
+            </section>
+
+            <section class="rounded overflow-hidden shadow-lg">
+              <img
+                class="w-full h-48 object-cover"
+                src="public/images/cubes.png"
+                alt="cubes"
+              />
+              <div class="bg-neutral-50 px-6 py-4">
+                <a
+                  target="_blank"
+                  href="https://github.com/Explee/cubes"
+                  class="text-blue-600 hover:text-blue-800"
+                >
+                  <div class="font-bold text-xl mb-2">Cubes (2012)</div>
+                </a>
+                <p class="text-gray-700 text-base">
+                  Cubes is an experiment about how we could control a game
+                  without a mouse or a keyboard.
+                  <a
+                    target="_blank"
+                    href="https://cubes.explee.com/"
+                    class="text-blue-600 hover:text-blue-800"
+                    >This game</a
+                  >
+                  has been entirely built in 24 hours while the AngelHack Paris.
+                </p>
+              </div>
+            </section>
+          </div>
+        </section>
+
+        <section class="bg-neutral-50 p-8">
+          <h3 class="text-2xl font-semibold text-gray-800 mb-3">My blog</h3>
+
+          <a
+            target="_blank"
+            href="https://morgangiraud.medium.com/"
+            class="text-blue-500 hover:text-blue-800 w-full"
+            >I write some blog posts sometime!</a
+          >
+        </section>
+
+        <section class="bg-gray-100 p-8">
+          <h3 class="text-2xl font-semibold text-gray-800 mb-3">
+            Other stuffs I did
+          </h3>
+
+          <ul class="list-outside list-disc ml-12">
+            <li class="pb-2">
+              <div class="flex justify-start">
+                <a
+                  href="https://github.com/morgangiraud/mlexps"
+                  target="_blank"
+                  class="font-bold text-xl text-blue-600 hover:text-blue-800 w-56"
+                  >ML exps (2020)</a
+                >
+                <p class="text-gray-700 text-base">
+                  ML experiments exploring visual semantic grouding using
+                  quantized representation
+                </p>
+              </div>
+            </li>
+
+            <li class="pb-2">
+              <div class="flex justify-start">
+                <a
+                  href="https://github.com/morgangiraud/OpenMined"
+                  target="_blank"
+                  class="font-bold text-xl text-blue-600 hover:text-blue-800 w-56"
+                  >OpenMined (2018)</a
+                >
+                <p class="text-gray-700 text-base">
+                  Contributed to PySyft and the OpenMinded ecosystem, a library
+                  for private deep learning
+                </p>
+              </div>
+            </li>
+
+            <li class="pb-2">
+              <div class="flex justify-start">
+                <a
+                  href="https://github.com/morgangiraud/mps"
+                  target="_blank"
+                  class="font-bold text-xl text-blue-600 hover:text-blue-800 w-56"
+                  >MPS (2018)</a
+                >
+                <p class="text-gray-700 text-base">
+                  A nice library to visualize and plays with markov process
+                  online.
+                </p>
+              </div>
+            </li>
+
+            <li class="pb-2">
+              <div class="flex justify-start">
+                <a
+                  href="https://github.com/morgangiraud/ecvd-js"
+                  target="_blank"
+                  class="font-bold text-xl text-blue-600 hover:text-blue-800 w-56"
+                  >ecvd-js (2016)</a
+                >
+                <p class="text-gray-700 text-base">
+                  JS/Algo Lessons for the ECV Digital school.
+                  <a
+                    target="_blank"
+                    href="https://morgangiraud.com/ecvd-js/"
+                    class="text-blue-600 hover:text-blue-800"
+                    >Website here</a
+                  >
+                </p>
+              </div>
+            </li>
+
+            <li class="pb-2">
+              <div class="flex justify-start">
+                <a
+                  href="https://github.com/morgangiraud/ecvd-php"
+                  target="_blank"
+                  class="font-bold text-xl text-blue-600 hover:text-blue-800 w-56"
+                  >ecvd-php (2016)</a
+                >
+                <p class="text-gray-700 text-base">
+                  PHP/Mysql Lessons for the ECV Digital school.
+                  <a
+                    target="_blank"
+                    href="https://morgangiraud.com/ecvd-php/"
+                    class="text-blue-600 hover:text-blue-800"
+                    >Website here</a
+                  >
+                </p>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <section class="bg-neutral-50 p-8 text-center rounded-b-lg">
           <p class="text-lg text-gray-700">
             Interested in working together? Get in touch:
           </p>
