@@ -653,8 +653,8 @@ video {
   width: 0px;
 }
 
-.w-56 {
-  width: 14rem;
+.w-48 {
+  width: 12rem;
 }
 
 .w-7 {
@@ -663,10 +663,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.w-48 {
-  width: 12rem;
 }
 
 .list-outside {
@@ -974,14 +970,6 @@ video {
 
   .md\:w-auto {
     width: auto;
-  }
-
-  .md\:grid-cols-3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
-  .md\:grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .md\:flex-row {
