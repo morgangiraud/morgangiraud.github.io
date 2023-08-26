@@ -49,7 +49,7 @@
     />
     <link href="public/style.css" rel="stylesheet" />
   </head>
-  <body class="bg-gray-200 font-sans leading-8">
+  <body class="bg-gray-200 font-sans leading-8 overflow-x-hidden">
     <!-- Banner: start -->
     <!-- <section>
       <div class="fixed top-0 left-0 w-full bg-blue-500 text-white z-50">
@@ -69,6 +69,26 @@
       <div class="h-32 sm:h-20 lg:h-12"></div>
     </section> -->
     <!-- Banner: end -->
+
+    <div
+      id="popup"
+      class="fixed inset-0 flex items-center justify-center p-4 bg-black bg-opacity-50 z-50 hidden"
+    >
+      <div class="bg-white p-8 rounded-lg">
+        <h1 class="text-xl font-semibold mb-4">I'm looking for Phd!</h1>
+        <p>If you think we could work together, send me a mail to<br /></p>
+        <p class="text-center">
+          <a href="mailto:contact@morgangiraud.com">contact@morgangiraud.com</a>
+        </p>
+
+        <button
+          id="close-popup"
+          class="mt-4 px-4 py-2 bg-red-500 text-white rounded mx-auto block"
+        >
+          Close
+        </button>
+      </div>
+    </div>
 
     <div class="container mx-auto px-4 py-10">
       <div class="rounded-lg shadow-md">
@@ -716,6 +736,29 @@
         </section>
       </div>
     </div>
+
+    <script>
+      // Function to get URL parameters
+      function getURLParameter(name) {
+        return (
+          decodeURIComponent(
+            (new RegExp("[?|&]" + name + "=" + "([^&;]+?)(&|#|;|$)").exec(
+              location.search
+            ) || [null, ""])[1].replace(/\+/g, "%20")
+          ) || null
+        );
+      }
+
+      if (getURLParameter("bcard") === "1") {
+        const popup = document.getElementById("popup");
+        popup.classList.remove("hidden");
+
+        // Close popup
+        document.getElementById("close-popup").addEventListener("click", () => {
+          popup.classList.add("hidden");
+        });
+      }
+    </script>
 
     <!-- Google tag (gtag.js) -->
     <script
