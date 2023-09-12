@@ -20,7 +20,7 @@
     "markdown-it": "^13.0.1",
     "markdown-it-container": "^3.0.0",
     "mustache": "^4.2.0",
-    "npm-check-updates": "^16.13.1",
-    "prettier": "^3.0.2"
+    "npm-check-updates": "^16.13.3",
+    "prettier": "^3.0.3"
   }
 }
