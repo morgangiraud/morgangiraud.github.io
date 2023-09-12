@@ -2,7 +2,7 @@
   "name": "morgangiraud.github.io",
   "description": "Personal website of Morgan Giraud",
   "repository": "git@github.com:morgangiraud/morgangiraud.github.io.git",
-  "author": "Mirgan Giraud",
+  "author": "Morgan Giraud",
   "license": "MIT",
   "scripts": {
     "build": "yarn build:css && yarn build:cv",

@@ -22,8 +22,10 @@ Notable experiences:
 
 ### RESEARCH & ENGINEERING INTERESTS
 
-- Explainable Artificial Intelligence (XAI) with an engineering focus: I am interested in developing tools to understand neural network training and inference dynamics.
-- ML scalability: Interested in building scalable infrastructure for ML research and deployments.
+- Reinforcement Learning (RL), especially Multi-agent RL and LLM-enhanced agents to improve human-agent interactions.
+- Explainable/Interpretable Machine Learning: developing tools to open-up the blackbox.
+- Traditional-ML enhanced LLMs: especially LLMs enhanced with external planner, critics and verifiers.
+- ML scalability: reducing the need for compute (improving data, models, etc.) and/or build scalable infrastructure and algorithm for ML research and deployments.
 
 ### SKILLS
 
