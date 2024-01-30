@@ -20,21 +20,21 @@ Notable experiences:
 - My research internship on Gounded language learning and modality fusion for which you can find the [annotated slides here](https://docs.google.com/presentation/d/1MKxizuQflOzxMjbv_sUYUOTsE_oWZ-g02TQzwOFdNtg)
 - Founded a company in 2012 called Explee, an online platform for creating animated videos.
 
-### RESEARCH & ENGINEERING INTERESTS
-
-- Reinforcement Learning (RL), especially Multi-agent RL and LLM-enhanced agents to improve human-agent interactions.
-- Explainable/Interpretable Machine Learning: developing tools to open-up the blackbox.
-- Traditional-ML enhanced LLMs: especially LLMs enhanced with external planner, critics and verifiers.
-- ML scalability: reducing the need for compute (improving data, models, etc.) and/or build scalable infrastructure and algorithm for ML research and deployments.
-
 ### SKILLS
 
-- Proficient in Python with experience in TensorFlow, Pytorch, and Jax (Local and Distributed Settings)
-- Proficient in TypeScript/JavaScript, PHP
-- Average knowledge of Golang.
-- Notion of C++ and GPU programming.
-- Strong knowledge in infrastructure engineering and management (deployments, db)
+- Proficient in Python with experience in TensorFlow, PyTorch, and Jax (Local and Distributed Settings).
+- Strong knowledge in infrastructure engineering (AWS, Docker, Linux) and management (CI/CD, git, etc.).
+- Average knowledge of CUDA and Triton.
+- Notion of C++ and Golang.
+- Proficient in TypeScript/JavaScript and PHP.
 - Fluent in French and English, with limited working proficiency in Italian.
+
+### RESEARCH & ENGINEERING INTERESTS
+
+- ML scalability: Reducing the need for compute by improving data and models efficiency, and building scalable infrastructure and algorithms for ML research and deployments.
+- Traditional-ML enhanced LLMs: especially LLMs enhanced with external planner, critics and verifiers.
+- Explainable/Interpretable Machine Learning: developing tools to open-up the blackbox.
+- Reinforcement Learning (RL), especially Multi-agent RL and LLM-enhanced agents to improve human-agent interactions.
 
 <div class="page"></div>
 
@@ -43,11 +43,11 @@ Notable experiences:
 <div class="container">
     <h3 class="left">WoW Studio | Tech lead </h3>
     <div class="right">
-        <em>Apr 2022 – Present | Location: Remote</em>
+        <em>Apr 2022 – Nov 2023 | Location: Remote</em>
     </div>
 </div>
 
-Leading a remote team of 5 technical professionals at [WoW Studio](https://www.linkedin.com/company/worldofwomennft/), a tech and media company that develops innovative experiences and products using blockchains technolgies (Ethereum L1/L2).
+Led a remote team of 5 technical professionals at [WoW Studio](https://www.linkedin.com/company/worldofwomennft/), a tech and media company that develops innovative experiences and products using blockchain technologies. (Ethereum L1/L2).
 
 - Remotely led the development of the highly successful WoWG NFT collection.
 - Actively participated in the developer hiring process by conducting interviews and creating technical assessments to evaluate candidates, ensuring a highly skilled team.
@@ -107,7 +107,7 @@ Explored various machine learning techniques, including:
 
 - GANs for video compression (2019)
 - [Deep reinforcement learning with world models](https://github.com/morgangiraud/openai-rl) (2017)
-- Unsupervised NLP (embedding, token prediction) and CV style transfert (2016)
+- Unsupervised NLP (embedding, token prediction) and CV style transfer (2016)
 - Blogger at https://medium.com/@morgangiraud (Main subject: ML engineering)
 
 <div class="container">
@@ -117,7 +117,7 @@ Explored various machine learning techniques, including:
     </div>
 </div>
 
-Worked as a freelance PHP/JavaScript developper, optimizing technical stacks, developping applications and structuring technical processes for both clients.
+Worked as a freelance PHP/JavaScript developer, optimizing technical stacks, developping applications and structuring technical processes for both clients.
 
 <div class="container">
     <h3 class="left">ECV Digital | Teacher</h3>
