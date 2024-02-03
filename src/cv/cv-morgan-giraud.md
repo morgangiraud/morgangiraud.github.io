@@ -75,11 +75,15 @@ Built [Leniax](https://github.com/morgangiraud/leniax), a JAX library to apply s
     </div>
 </div>
 
-[Research internship on Grounded Language Learning in simulated environments](https://www.youtube.com/watch?v=OpnSiUJC9Qw) at ANITI (Artificial and Natural Intelligence Toulouse Institute):
+Research internship on Grounded Language Learning in simulated environments at ANITI (Artificial and Natural Intelligence Toulouse Institute):
 
 - Conducted research under the supervision of [Rufin VanRullen](https://scholar.google.com/citations?user=1pwyaYgAAAAJ).
-- Created [annotated slides](https://docs.google.com/presentation/d/1MKxizuQflOzxMjbv_sUYUOTsE_oWZ-g02TQzwOFdNtg) for the final presentation
+- Optimised a multi-agent simulation game to boost model training efficiency.
+- Developed and trained several multimodal models for modality fusing (computer vision and natural language processing).
+- Final [presentation](https://www.youtube.com/watch?v=OpnSiUJC9Qw) and [annotated slides](https://docs.google.com/presentation/d/1MKxizuQflOzxMjbv_sUYUOTsE_oWZ-g02TQzwOFdNtg)
 - Project done using PyTorch: [https://github.com/ruflab/soc](https://github.com/ruflab/soc)
+
+<div class="page"></div>
 
 <div class="container">
     <h3 class="left">TF-encrypted | ML engineer</h3>
@@ -93,8 +97,6 @@ Core original contributor to the Open Source library for privacy-preserving Mach
 - Contributed to the prototype that enabled [Cape Privacy](https://capeprivacy.com/) to secure its first seed round of funding.
 - Developed discretized functions for neural networks, enabling training and inference to be conducted in cryptographic settings for enhanced privacy.
 - Played a significant role in the Golang implementation of specific components within the project.
-
-<div class="page"></div>
 
 <div class="container">
     <h3 class="left">Freelance | ML engineer</h3>
@@ -142,6 +144,8 @@ Co-founded the startup Explee as its CTO: an online platform for creating animat
 - Designed and developed the video rendering engine in JavaScript.
 - Created computer vision algorithms for automatic drawing.
 - Designed an managed the MySQL database.
+
+<div class="page"></div>
 
 ## EDUCATION:
 
