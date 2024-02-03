@@ -8,6 +8,7 @@
     "build": "yarn build:css && yarn build:cv",
     "build:css": "tailwindcss -i src/main.css -o ./public/style.css",
     "build:cv": "node src/cv/render.js",
+    "build:summary": "node src/cv/render-summary.js",
     "watch": "tailwindcss -i src/main.css -o ./public/style.css --watch",
     "lint": "prettier --check .",
     "format": "prettier --write ."
