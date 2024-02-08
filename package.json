@@ -8,13 +8,13 @@
     "build": "yarn build:css && yarn build:cv",
     "build:css": "tailwindcss -i src/main.css -o ./public/style.css",
     "build:cv": "node src/cv/render.js",
-    "build:summary": "node src/cv/render-summary.js",
     "watch": "tailwindcss -i src/main.css -o ./public/style.css --watch",
     "lint": "prettier --check .",
     "format": "prettier --write ."
   },
   "dependencies": {
-    "tailwindcss": "^3.3.3"
+    "tailwindcss": "^3.3.3",
+    "update-browserslist-db": "^1.0.13"
   },
   "devDependencies": {
     "highlight.js": "^11.8.0",

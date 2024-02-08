@@ -119,7 +119,7 @@ Explored various machine learning techniques, including:
     </div>
 </div>
 
-Worked as a freelance PHP/JavaScript developer, optimizing technical stacks, developping applications and structuring technical processes for both clients.
+Worked as a freelance PHP/JavaScript developer, optimizing technical stacks, developping applications and structuring technical processes.
 
 <div class="container">
     <h3 class="left">ECV Digital | Teacher</h3>
@@ -165,4 +165,4 @@ Leading graduate school of engineering and part of the Institut Mines-Télécom,
     </div>
 </div>
 
-Intensive courses in advanced mathematics, including algebra and calculus, and physics, preparing for the highly selective entrance exams to the French "Grandes Ecoles."
+Intensive courses in advanced mathematics and physics, preparing for the highly selective entrance exams to the French "Grandes Ecoles."

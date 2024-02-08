@@ -38,8 +38,16 @@ md.use(require("markdown-it-container"), "", {
   },
 });
 
+/////////////////////////////
+// CV
+/////////////////////////////
+console.log("Dumping CV HTML")
+
 // Read mardkown file content
+const textFr = fs.readFileSync(__dirname + "/cv-fr-morgan-giraud.md", "utf8");
 const text = fs.readFileSync(__dirname + "/cv-morgan-giraud.md", "utf8");
+
+const contentFr = md.render(textFr);
 const content = md.render(text);
 
 // Read css style file from current script folder
@@ -49,6 +57,14 @@ const style =
   "\n</style>\n";
 
 const template = fs.readFileSync(__dirname + "/template.html", "utf8");
+
+var viewFr = {
+  title: "CV - FR - Morgan Giraud",
+  style: style,
+  content: contentFr,
+};
+const htmlFr = mustache.render(template, viewFr);
+
 var view = {
   title: "CV - Morgan Giraud",
   style: style,
@@ -58,3 +74,36 @@ const html = mustache.render(template, view);
 
 // Write html down
 fs.writeFileSync(__dirname + "/../../public/cv-morgan-giraud.html", html);
+fs.writeFileSync(__dirname + "/../../public/cv-fr-morgan-giraud.html", htmlFr);
+
+
+/////////////////////////////
+// Summary
+/////////////////////////////
+
+console.log("Dumping Summary HTML")
+
+// Read mardkown file content
+const sumText = fs.readFileSync(__dirname + "/summary.md", "utf8");
+const sumTextFr = fs.readFileSync(__dirname + "/summary-fr.md", "utf8");
+
+const sumContent = md.render(sumText);
+const sumContentFr = md.render(sumTextFr);
+
+var sumView = {
+  title: "Summary - EN - Morgan Giraud",
+  style: style,
+  content: sumContent,
+};
+const sumHtml = mustache.render(template, sumView);
+
+var sumViewFr = {
+  title: "Summary - FR - Morgan Giraud",
+  style: style,
+  content: sumContentFr,
+};
+const sumHtmlFr = mustache.render(template, sumViewFr);
+
+// Write html down
+fs.writeFileSync(__dirname + "/../../public/summary.html", sumHtml);
+fs.writeFileSync(__dirname + "/../../public/summary-fr.html", sumHtmlFr);
