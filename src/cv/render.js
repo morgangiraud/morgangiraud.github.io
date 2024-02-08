@@ -38,18 +38,6 @@ md.use(require("markdown-it-container"), "", {
   },
 });
 
-/////////////////////////////
-// CV
-/////////////////////////////
-console.log("Dumping CV HTML")
-
-// Read mardkown file content
-const textFr = fs.readFileSync(__dirname + "/cv-fr-morgan-giraud.md", "utf8");
-const text = fs.readFileSync(__dirname + "/cv-morgan-giraud.md", "utf8");
-
-const contentFr = md.render(textFr);
-const content = md.render(text);
-
 // Read css style file from current script folder
 const style =
   "\n<style>\n" +
@@ -58,12 +46,17 @@ const style =
 
 const template = fs.readFileSync(__dirname + "/template.html", "utf8");
 
-var viewFr = {
-  title: "CV - FR - Morgan Giraud",
-  style: style,
-  content: contentFr,
-};
-const htmlFr = mustache.render(template, viewFr);
+/////////////////////////////
+// CV
+/////////////////////////////
+console.log("Dumping CV HTML")
+
+// Read mardkown file content
+const text = fs.readFileSync(__dirname + "/cv-morgan-giraud.md", "utf8");
+const textFr = fs.readFileSync(__dirname + "/cv-fr-morgan-giraud.md", "utf8");
+
+const content = md.render(text);
+const contentFr = md.render(textFr);
 
 var view = {
   title: "CV - Morgan Giraud",
@@ -72,10 +65,48 @@ var view = {
 };
 const html = mustache.render(template, view);
 
+var viewFr = {
+  title: "CV - FR - Morgan Giraud",
+  style: style,
+  content: contentFr,
+};
+const htmlFr = mustache.render(template, viewFr);
+
 // Write html down
 fs.writeFileSync(__dirname + "/../../public/cv-morgan-giraud.html", html);
 fs.writeFileSync(__dirname + "/../../public/cv-fr-morgan-giraud.html", htmlFr);
 
+
+/////////////////////////////
+// Cover letter
+/////////////////////////////
+
+console.log("Dumping Cover letter HTML")
+
+// Read mardkown file content
+const clText = fs.readFileSync(__dirname + "/cl-morgan-giraud.md", "utf8");
+const clTextFr = fs.readFileSync(__dirname + "/cl-fr-morgan-giraud.md", "utf8");
+
+const clContent = md.render(clText);
+const clContentFr = md.render(clTextFr);
+
+var clView = {
+  title: "Cover letter - Morgan Giraud",
+  style: style,
+  content: clContent,
+};
+const clHtml = mustache.render(template, clView);
+
+var clViewFr = {
+  title: "Cover letter - FR - Morgan Giraud",
+  style: style,
+  content: clContentFr,
+};
+const clHtmlFr = mustache.render(template, clViewFr);
+
+// Write html down
+fs.writeFileSync(__dirname + "/../../public/cl-morgan-giraud.html", clHtml);
+fs.writeFileSync(__dirname + "/../../public/cl-fr-morgan-giraud.html", clHtmlFr);
 
 /////////////////////////////
 // Summary
