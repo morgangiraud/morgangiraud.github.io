@@ -9,10 +9,13 @@
     "build:css": "tailwindcss -i src/main.css -o ./public/style.css",
     "build:cv": "node src/cv/render.js",
     "watch": "tailwindcss -i src/main.css -o ./public/style.css --watch",
+    "minify:css": "postcss ./public/styles.css -o ./public/styles.min.css",
     "lint": "prettier --check .",
     "format": "prettier --write ."
   },
   "dependencies": {
+    "cssnano": "^7.0.2",
+    "postcss-cli": "^11.0.0",
     "tailwindcss": "^3.3.3",
     "update-browserslist-db": "^1.0.13"
   },

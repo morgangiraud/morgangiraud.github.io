@@ -49,7 +49,8 @@
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"
     />
-    <link href="public/style.css" rel="stylesheet" />
+    <!-- <link href="public/styles.css" rel="stylesheet" media="all"/> -->
+    <link href="public/styles.min.css" rel="stylesheet" media="all"/>
   </head>
   <body class="bg-gray-200 font-sans leading-8 overflow-x-hidden">
     <!-- Banner: start -->
@@ -115,7 +116,7 @@
               <div
                 class="mt-4 flex items-center justify-center md:justify-start space-x-2"
               >
-                <a href="https://github.com/morgangiraud" target="_blank">
+                <a href="https://github.com/morgangiraud" target="_blank" aria-label="Morgan Giraud on Github">
                   <i
                     class="fa fa-github fa-2x text-gray-800 hover:text-blue-600"
                   ></i>
@@ -123,12 +124,13 @@
                 <a
                   href="https://www.linkedin.com/in/morgangiraud/"
                   target="_blank"
+                  aria-label="Morgan Giraud on Linkedin"
                 >
                   <i
                     class="fa fa-linkedin fa-2x text-gray-800 hover:text-blue-600"
                   ></i>
                 </a>
-                <a href="https://twitter.com/morgangiraud/" target="_blank">
+                <a href="https://twitter.com/morgangiraud/" target="_blank" aria-label="Morgan Giraud on X">
                   <i
                     class="fa fa-twitter fa-2x text-gray-800 hover:text-blue-600"
                   ></i>
@@ -136,6 +138,7 @@
                 <a
                   href="https://app.ens.domains/morgangiraud.eth"
                   target="_blank"
+                  aria-label="Morgan Giraud on Ethereum"
                 >
                   <svg
                     viewBox="0 2 24 24"
@@ -148,7 +151,7 @@
                     ></path>
                   </svg>
                 </a>
-                <a href="mailto:contact@morgangiraud.com">
+                <a href="mailto:contact@morgangiraud.com" aria-label="Morgan Giraud's mail">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 2 24 24"
@@ -394,7 +397,8 @@
             <section class="rounded overflow-hidden shadow-lg">
               <img
                 class="w-full h-48 object-cover"
-                src="public/images/cellular-conquest.png"
+                src="public/images/cellular-conquest.webp"
+                alt="Cellular conquest"
               />
 
               <div class="bg-neutral-50 px-6 py-4">
@@ -463,8 +467,8 @@
             <section class="rounded overflow-hidden shadow-lg">
               <img
                 class="w-full h-48 object-cover"
-                src="public/images/gll.png"
-                alt="Project 1"
+                src="public/images/gll.webp"
+                alt="GLL"
               />
               <div class="bg-neutral-50 px-6 py-4">
                 <a
@@ -524,8 +528,8 @@
             <section class="rounded overflow-hidden shadow-lg">
               <img
                 class="w-full h-48 object-cover"
-                src="public/images/mps.png"
-                alt="openai-rl"
+                src="public/images/mps.webp"
+                alt="MPS"
               />
               <div class="bg-neutral-50 px-6 py-4">
                 <a
@@ -551,8 +555,8 @@
             <section class="rounded overflow-hidden shadow-lg">
               <img
                 class="w-full h-48 object-cover"
-                src="public/images/boobabot.jpg"
-                alt="openai-rl"
+                src="public/images/boobabot.webp"
+                alt="Boobabot"
               />
               <div class="bg-neutral-50 px-6 py-4">
                 <a
@@ -573,8 +577,8 @@
             <section class="rounded overflow-hidden shadow-lg">
               <img
                 class="w-full h-48 object-cover"
-                src="public/images/neural_style.png"
-                alt="openai-rl"
+                src="public/images/neural_style.webp"
+                alt="Neural style"
               />
               <div class="bg-neutral-50 px-6 py-4">
                 <a
@@ -594,8 +598,8 @@
             <section class="rounded overflow-hidden shadow-lg">
               <img
                 class="w-full h-48 object-cover"
-                src="public/images/hive.png"
-                alt="openai-rl"
+                src="public/images/hive.webp"
+                alt="Hive"
               />
               <div class="bg-neutral-50 px-6 py-4">
                 <a
@@ -614,7 +618,7 @@
             <section class="rounded overflow-hidden shadow-lg">
               <img
                 class="w-full h-48 object-cover"
-                src="public/images/cubes.png"
+                src="public/images/cubes.webp"
                 alt="cubes"
               />
               <div class="bg-neutral-50 px-6 py-4">
@@ -739,11 +743,8 @@
             class="text-blue-600 hover:text-blue-800 font-semibold mt-2"
             >contact@morgangiraud.com</a
           >
-          <p class="text-gray-700 mt-8">
+          <p id="footer-copyright" class="text-gray-700 mt-8">
             © Morgan Giraud -
-            <script>
-              document.write(new Date().getFullYear());
-            </script>
           </p>
         </section>
       </div>
@@ -770,13 +771,20 @@
           popup.classList.add("hidden");
         });
       }
+
+
+      const currentYear = new Date().getFullYear();
+      const footerYear = document.getElementById('footer-copyright');
+      footerYear.textContent += ` ${currentYear}`;
     </script>
+
 
     <!-- Google tag (gtag.js) -->
     <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=G-XZNN9B0RGP"
     ></script>
+
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag() {
