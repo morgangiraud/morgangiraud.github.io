@@ -5,7 +5,7 @@
   "author": "Morgan Giraud",
   "license": "MIT",
   "scripts": {
-    "build": "yarn build:css && yarn build:cv",
+    "build": "yarn build:css && yarn minify:css && yarn build:cv",
     "build:css": "tailwindcss -i src/main.css -o ./public/style.css",
     "build:cv": "node src/cv/render.js",
     "watch": "tailwindcss -i src/main.css -o ./public/style.css --watch",

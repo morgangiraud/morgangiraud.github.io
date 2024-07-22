@@ -53,9 +53,11 @@ console.log("Dumping CV HTML")
 
 // Read mardkown file content
 const text = fs.readFileSync(__dirname + "/cv-morgan-giraud.md", "utf8");
+const textShort = fs.readFileSync(__dirname + "/cv-morgan-giraud-short.md", "utf8");
 const textFr = fs.readFileSync(__dirname + "/cv-fr-morgan-giraud.md", "utf8");
 
 const content = md.render(text);
+const contentShort = md.render(textShort);
 const contentFr = md.render(textFr);
 
 var view = {
@@ -64,6 +66,13 @@ var view = {
   content: content,
 };
 const html = mustache.render(template, view);
+
+var view = {
+  title: "CV - Morgan Giraud",
+  style: style,
+  content: contentShort,
+};
+const htmlShort = mustache.render(template, view);
 
 var viewFr = {
   title: "CV - FR - Morgan Giraud",
@@ -74,6 +83,7 @@ const htmlFr = mustache.render(template, viewFr);
 
 // Write html down
 fs.writeFileSync(__dirname + "/../../public/cv-morgan-giraud.html", html);
+fs.writeFileSync(__dirname + "/../../public/cv-morgan-giraud-short.html", htmlShort);
 fs.writeFileSync(__dirname + "/../../public/cv-fr-morgan-giraud.html", htmlFr);
 
 

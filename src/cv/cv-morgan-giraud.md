@@ -12,21 +12,21 @@
 
 ### PROFILE SUMMARY
 
-Passionate ML & Web engineer, skilled in Python, and its diverse set of ML frameworks (TF, PyTorch, JAX). Also skilled in JS/TS and web app engineering. Proficient in working with on-site and remote diverse teams.
+Passionate ML & Web engineer, skilled in Python, and its diverse set of ML frameworks (TF, PyTorch, JAX). Also proficient in JS/TS and web app engineering. Experienced in working with on-site and remote diverse teams.
 
 Notable experiences:
 
-- Being a core original contributor to the open-source library, [tf-encrypted](https://tf-encrypted.io/), for privacy-preserving machine learning in TensorFlow, which was accepted at the NeurIPS 2018 PPML workshop
-- My research internship on Gounded language learning and modality fusion for which you can find the [annotated slides here](https://docs.google.com/presentation/d/1MKxizuQflOzxMjbv_sUYUOTsE_oWZ-g02TQzwOFdNtg)
-- Founded a company in 2012 called Explee, an online platform for creating animated videos.
+- **Team Leadership**: Led the technical team on a project that generated millions of euros in benefits.
+- **Open-Source Contribution**: Core original contributor to the open-source library, [tf-encrypted](https://tf-encrypted.io/), for privacy-preserving machine learning in TensorFlow, accepted at the NeurIPS 2018 PPML workshop.
+- **Research**: Completed a research internship on grounded language learning and modality fusion. Find the [annotated slides here](https://docs.google.com/presentation/d/1MKxizuQflOzxMjbv_sUYUOTsE_oWZ-g02TQzwOFdNtg).
+- **Entrepreneurship**: Founded Explee in 2012 as the CTO, an online platform for creating animated videos.
 
 ### SKILLS
 
-- Proficient in Python with experience in TensorFlow, PyTorch, and Jax (Local and Distributed Settings).
-- Strong knowledge in infrastructure engineering (AWS, Docker, Linux) and management (CI/CD, git, etc.).
+- Proficient in Python with experience in Jax, Pytorch and TensorFlow (Local and Distributed Settings).
 - Average knowledge of CUDA and Triton.
-- Notion of C++ and Golang.
-- Proficient in TypeScript/JavaScript and PHP.
+- Extensive experience in infrastructure engineering (AWS, Docker, Linux) and development processes (CI/CD, Git, etc.).
+- Proficient in TypeScript/JavaScript and PHP. Notion of C++ and Golang.
 - Fluent in French and English, with limited working proficiency in Italian.
 
 ### RESEARCH & ENGINEERING INTERESTS
@@ -86,9 +86,9 @@ Research internship on Grounded Language Learning in simulated environments at A
 <div class="page"></div>
 
 <div class="container">
-    <h3 class="left">TF-encrypted | ML engineer</h3>
+    <h3 class="left">Freelance | ML engineer</h3>
     <div class="right">
-        <em>2018 | Location: Remote</em>
+        <em>2016 - 2019 | Location: Remote</em>
     </div>
 </div>
 
@@ -96,20 +96,11 @@ Core original contributor to the Open Source library for privacy-preserving Mach
 
 - Contributed to the prototype that enabled [Cape Privacy](https://capeprivacy.com/) to secure its first seed round of funding.
 - Developed discretized functions for neural networks, enabling training and inference to be conducted in cryptographic settings for enhanced privacy.
-- Played a significant role in the Golang implementation of specific components within the project.
 
-<div class="container">
-    <h3 class="left">Freelance | ML engineer</h3>
-    <div class="right">
-        <em>2016 - 2019 | Location: Remote</em>
-    </div>
-</div>
-
-Explored various machine learning techniques, including:
+Other contributions:
 
 - GANs for video compression (2019)
 - [Deep reinforcement learning with world models](https://github.com/morgangiraud/openai-rl) (2017)
-- Unsupervised NLP (embedding, token prediction) and CV style transfer (2016)
 - Blogger at https://medium.com/@morgangiraud (Main subject: ML engineering)
 
 <div class="container">
@@ -139,18 +130,14 @@ Taught two semester-long classes: PHP/MySQL and Algorithm/JavaScript, introducin
 
 Co-founded the startup Explee as its CTO: an online platform for creating animated videos.
 
-- Developed the entire technical stack for Explee.
-- Built and managed a complex distributed web application infrastructure using AWS, Docker.
-- Designed and developed the video rendering engine in JavaScript.
-- Created computer vision algorithms for automatic drawing.
-- Designed an managed the MySQL database.
-
-<div class="page"></div>
+- Developed the entire technical stack of a complex distributed web application.
+- Built and managed infrastructure using AWS and Docker.
+- Created the Javascript video rendering engine and computer vision algorithms for automatic drawing.
 
 ## EDUCATION:
 
 <div class="container">
-    <h3 class="left"> Telecom SudParis - Engineer's Degree (MSc in Computer Science)</h3>
+    <h4 class="left"> Telecom SudParis - Engineer's Degree (MSc in Comp. Sci.)</h3>
     <div class="right">
         <em>2009 - 2012 | Location: Evry, France.</em>
     </div>
@@ -159,7 +146,7 @@ Co-founded the startup Explee as its CTO: an online platform for creating animat
 Leading graduate school of engineering and part of the Institut Mines-Télécom, a top institute for Information and Communication Technology in France.
 
 <div class="container">
-    <h3 class="left"> Berthollet - Classes preparatoire</h3>
+    <h4 class="left"> Berthollet - Classes preparatoire</h3>
     <div class="right">
         <em>2007 - 2009 | Location: Annecy, France.</em>
     </div>

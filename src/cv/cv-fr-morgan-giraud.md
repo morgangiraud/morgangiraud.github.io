@@ -16,17 +16,17 @@ Ingénieur passionné en ML & Web, ayant de forte connaissances en Python et ses
 
 Expériences notables :
 
-- Contributions importantes à la libraririe open-source, [tf-encrypted](https://tf-encrypted.io/), pour le machine learning chiffré dans TensorFlow, acceptée à l'atelier PPML NeurIPS 2018
-- Stage de recherche sur l'apprentissage du langage ancré et la fusion des modalités pour lequel vous pouvez trouver les [diapositives annotées ici](https://docs.google.com/presentation/d/1MKxizuQflOzxMjbv_sUYUOTsE_oWZ-g02TQzwOFdNtg)
-- Création d'une entreprise en 2012 appelée Explee, une plateforme en ligne pour créer des vidéos animées.
+- **Leadership** : Direction de l'équipe technique d'un projet ayant généré des dizaines de millions d'euros de bénéfices.
+- **Contribution Open-Source** : Contributions importantes à la libraririe open-source, [tf-encrypted](https://tf-encrypted.io/), pour le machine learning chiffré dans TensorFlow, acceptée à l'atelier PPML NeurIPS 2018
+- **Recherche** : Stage de recherche sur l'apprentissage du langage ancré et la fusion des modalités pour lequel vous pouvez trouver les [diapositives annotées ici](https://docs.google.com/presentation/d/1MKxizuQflOzxMjbv_sUYUOTsE_oWZ-g02TQzwOFdNtg)
+- **Entrepreneuriat** : Création d'Explee en 2012 en tant que CTO, une plateforme en ligne pour créer des vidéos animées.
 
 ### COMPÉTENCES
 
 - Compétent en Python avec expérience en TensorFlow, PyTorch, et Jax (Calculs locaux et distribués).
-- Solide connaissance en ingénierie d'infrastructure (AWS, Docker, Linux) et gestion du cycle de dévelopement (CI/CD, git, etc.).
 - Connaissances moyennes de CUDA et Triton.
-- Notions de C++ et Golang.
-- Compétent en TypeScript/JavaScript et PHP.
+- Solide connaissance en ingénierie d'infrastructure (AWS, Docker, Linux) et des processus de développement (CI/CD, git, etc.).
+- Compétent en TypeScript/JavaScript et PHP. Notions de C++ et Golang.
 - Niveau en français et anglais courant, avec une compétence de travail limitée en italien.
 
 ### SUJET D'INTÉRÊTS EN RECHERCHE & INGÉNIERIE
@@ -47,7 +47,7 @@ Expériences notables :
     </div>
 </div>
 
-Dirigé une équipe à distance de 5 professionnels techniques chez [WoW Studio](https://www.linkedin.com/company/worldofwomennft/), une entreprise de tech et médias développant des expériences et produits web innovants utilisant les technologies blockchain (Ethereum L1/L2).
+Directiojn d'une équipe à distance de 5 professionnels techniques chez [WoW Studio](https://www.linkedin.com/company/worldofwomennft/), une entreprise de tech et médias développant des expériences et produits web innovants utilisant les technologies blockchain (Ethereum L1/L2).
 
 - Direction à distance du développement de la collection NFT WoWG à grand succès.
 - Participation active au processus de recrutement des développeurs par la conduite d'entretiens et la création d'évaluations techniques pour évaluer les candidats, assurant une équipe hautement qualifiée.
@@ -86,30 +86,20 @@ Stage de recherche sur l'apprentissage du langage ancré dans des environnements
 <div class="page"></div>
 
 <div class="container">
-    <h3 class="left">TF-encrypted | Ingénieur ML</h3>
-    <div class="right">
-        <em>2018 | Lieu : À distance</em>
-    </div>
-</div>
-
-Contributeur à la bibliothèque Open Source pour le Machine Learning chiffré dans TensorFlow : [tf-encrypted](https://tf-encrypted.io/) acceptée à l'atelier PPML NeurIPS 2018. [Article de recherche associé](https://arxiv.org/abs/1810.08130)
-
-- Contribution au prototype permettant à [Cape Privacy](https://capeprivacy.com/) de sécuriser son premier tour de financement de démarrage.
-- Développement de fonctions discrétisées pour les réseaux neuronaux, permettant l'entraînement et l'inférence chiffrée.
-- Rôle significatif dans l'implémentation en Golang.
-
-<div class="container">
     <h3 class="left">Freelance | Ingénieur ML</h3>
     <div class="right">
         <em>2016 - 2019 | Lieu : À distance</em>
     </div>
 </div>
 
-Exploration de diverses techniques d'apprentissage machine, incluant :
+Contributeur à la bibliothèque Open Source pour le Machine Learning chiffré dans TensorFlow : [tf-encrypted](https://tf-encrypted.io/) acceptée à l'atelier PPML NeurIPS 2018. [Article de recherche associé](https://arxiv.org/abs/1810.08130)
 
+- Contribution au prototype permettant à [Cape Privacy](https://capeprivacy.com/) de sécuriser son premier tour de financement.
+- Développement de fonctions discrétisées pour les réseaux neuronaux, permettant l'entraînement et l'inférence chiffrée.
+
+Autres Contributions :
 - Utilisation de GANs pour la compression vidéo (2019)
 - [Apprentissage par renforcement avec des "modèles de mondes"](https://github.com/morgangiraud/openai-rl) (2017)
-- NLP non supervisé (embedding, prédiction de tokens) et transfert de style en CV (2016)
 - Blogueur sur https://medium.com/@morgangiraud (Sujet principal : ingénierie ML)
 
 <div class="container">
@@ -139,30 +129,25 @@ Enseigné deux cours d'un semestre : PHP/MySQL et Algorithm/JavaScript, introdui
 
 Co-fondé la startup Explee en tant que CTO : une plateforme en ligne pour créer des vidéos animées.
 
-- Développé l'ensemble de l'infrastructure.
-- Construit et géré une infrastructure d'application web distribuée complexe utilisant AWS, Docker.
-- Conçu et développé le moteur de rendu vidéo en JavaScript.
-- Créé des algorithmes de vision par ordinateur pour le dessin automatique.
-- Conçu et géré la base de données MySQL.
+- Développement de l'ensemble de l'infrastructure technique de l'application web complexe utilisant AWS, Docker.
+- Conçeption et développement du moteur de rendu vidéo en JavaScript et des algorithmes de vision par ordinateur pour le dessin automatique.
 
-<div class="page"></div>
-
-## FORMATION :
+## FORMATION
 
 <div class="container">
-    <h3 class="left"> Telecom SudParis - Diplôme d'Ingénieur (MSc en Informatique)</h3>
+    <h4 class="left"> Telecom SudParis - Diplôme d'Ingénieur (MSc en Informatique)</h3>
     <div class="right">
         <em>2009 - 2012 | Lieu : Evry, France.</em>
     </div>
 </div>
 
-Grande école d'ingénieurs faisant partie de l'Institut Mines-Télécom, un institut de premier plan pour les Technologies de l'Information et de la Communication en France.
+Grande école d'ingénieurs faisant partie de l'Institut Mines-Télécom
 
 <div class="container">
-    <h3 class="left"> Berthollet - Classes préparatoires</h3>
+    <h4 class="left"> Berthollet - Classes préparatoires</h3>
     <div class="right">
         <em>2007 - 2009 | Lieu : Annecy, France.</em>
     </div>
 </div>
 
-Cours intensifs en mathématiques et physiques avancées, préparant aux examens d'entrée très sélectifs des "Grandes Écoles" françaises.
+Cours intensifs en mathématiques et physiques avancées.
