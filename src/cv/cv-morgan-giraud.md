@@ -4,7 +4,7 @@
         <h2 style="margin: 0">ML engineer and Tech lead</h2>
     </div>
     <div class="right">
-        10 faubourg des Annonciades<br/>74000, Annecy, France.<br/><a href="tel:+33610574116">+33610574116</a><br/><a href="mailto:contact@morgangiraud.com">contact@morgangiraud.com</a><br/><a href="https://morgangiraud.com">https://morgangiraud.com</a>
+        <a href="tel:+33610574116">+33610574116</a><br/><a href="mailto:contact@morgangiraud.com">contact@morgangiraud.com</a><br/><a href="https://morgangiraud.com">https://morgangiraud.com</a>
     </div>
 </div>
 
@@ -43,7 +43,7 @@ Notable experiences:
 <div class="container">
     <h3 class="left">WoW Studio | Tech lead </h3>
     <div class="right">
-        <em>Apr 2022 – Nov 2023 | Location: Remote</em>
+        <em>Apr 2022 – Nov 2023</em>
     </div>
 </div>
 
@@ -58,7 +58,7 @@ Led a remote team of 5 technical professionals at [WoW Studio](https://www.linke
 <div class="container">
     <h3 class="left">Leniax | ML engineer</h3>
     <div class="right">
-        <em>2020 - 2022 | Location: Remote</em>
+        <em>2020 - 2022</em>
     </div>
 </div>
 
@@ -71,7 +71,7 @@ Built [Leniax](https://github.com/morgangiraud/leniax), a JAX library to apply s
 <div class="container">
     <h3 class="left">ANITI | ML research internship</h3>
     <div class="right">
-        <em>Jun 2020 - Sep 2020 | Location: Toulouse, France</em>
+        <em>Jun 2020 - Sep 2020</em>
     </div>
 </div>
 
@@ -88,7 +88,7 @@ Research internship on Grounded Language Learning in simulated environments at A
 <div class="container">
     <h3 class="left">Freelance | ML engineer</h3>
     <div class="right">
-        <em>2016 - 2019 | Location: Remote</em>
+        <em>2016 - 2019</em>
     </div>
 </div>
 
@@ -106,7 +106,7 @@ Other contributions:
 <div class="container">
     <h3 class="left"> EatWith, MyLittleParis | Web Developer</h3>
     <div class="right">
-        <em>Jul 2015 – Jan 2016 | Location: Paris, France</em>
+        <em>Jul 2015 – Jan 2016</em>
     </div>
 </div>
 
@@ -115,7 +115,7 @@ Worked as a freelance PHP/JavaScript developer, optimizing technical stacks, dev
 <div class="container">
     <h3 class="left">ECV Digital | Teacher</h3>
     <div class="right">
-        <em>Oct 2015 – Jan 2016 | Location: Paris, France</em>
+        <em>Oct 2015 – Jan 2016</em>
     </div>
 </div>
 
@@ -124,7 +124,7 @@ Taught two semester-long classes: PHP/MySQL and Algorithm/JavaScript, introducin
 <div class="container">
     <h3 class="left">Explee | Co-founder & CTO</h3>
     <div class="right">
-        <em>2012 – 2021 | Location: Paris, France</em>
+        <em>2012 – 2021</em>
     </div>
 </div>
 
@@ -139,7 +139,7 @@ Co-founded the startup Explee as its CTO: an online platform for creating animat
 <div class="container">
     <h4 class="left"> Telecom SudParis - Engineer's Degree (MSc in Comp. Sci.)</h3>
     <div class="right">
-        <em>2009 - 2012 | Location: Evry, France.</em>
+        <em>2009 - 2012</em>
     </div>
 </div>
 
@@ -148,7 +148,7 @@ Leading graduate school of engineering and part of the Institut Mines-Télécom,
 <div class="container">
     <h4 class="left"> Berthollet - Classes preparatoire</h3>
     <div class="right">
-        <em>2007 - 2009 | Location: Annecy, France.</em>
+        <em>2007 - 2009</em>
     </div>
 </div>
 

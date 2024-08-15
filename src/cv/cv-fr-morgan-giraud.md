@@ -4,7 +4,7 @@
         <h2 style="margin: 0">Ingénieur ML et lead technique</h2>
     </div>
     <div class="right">
-        10 faubourg des Annonciades<br/>74000, Annecy, France.<br/><a href="tel:+33610574116">+33610574116</a><br/><a href="mailto:contact@morgangiraud.com">contact@morgangiraud.com</a><br/><a href="https://morgangiraud.com">https://morgangiraud.com</a>
+        <a href="tel:+33610574116">+33610574116</a><br/><a href="mailto:contact@morgangiraud.com">contact@morgangiraud.com</a><br/><a href="https://morgangiraud.com">https://morgangiraud.com</a>
     </div>
 </div>
 
@@ -43,7 +43,7 @@ Expériences notables :
 <div class="container">
     <h3 class="left">WoW Studio | Lead technique </h3>
     <div class="right">
-        <em>Avr 2022 – Nov 2023 | Lieu : À distance</em>
+        <em>Avr 2022 – Nov 2023</em>
     </div>
 </div>
 
@@ -58,7 +58,7 @@ Directiojn d'une équipe à distance de 5 professionnels techniques chez [WoW St
 <div class="container">
     <h3 class="left">Leniax | Ingénieur ML</h3>
     <div class="right">
-        <em>2020 - 2022 | Lieu : À distance</em>
+        <em>2020 - 2022</em>
     </div>
 </div>
 
@@ -71,7 +71,7 @@ Création de [Leniax](https://github.com/morgangiraud/leniax), une librairie JAX
 <div class="container">
     <h3 class="left">ANITI | Stage de recherche en ML</h3>
     <div class="right">
-        <em>Juin 2020 - Sep 2020 | Lieu : Toulouse, France</em>
+        <em>Juin 2020 - Sep 2020</em>
     </div>
 </div>
 
@@ -88,7 +88,7 @@ Stage de recherche sur l'apprentissage du langage ancré dans des environnements
 <div class="container">
     <h3 class="left">Freelance | Ingénieur ML</h3>
     <div class="right">
-        <em>2016 - 2019 | Lieu : À distance</em>
+        <em>2016 - 2019</em>
     </div>
 </div>
 
@@ -105,7 +105,7 @@ Autres Contributions :
 <div class="container">
     <h3 class="left"> EatWith, MyLittleParis | Développeur Web</h3>
     <div class="right">
-        <em>Juil 2015 – Jan 2016 | Lieu : Paris, France</em>
+        <em>Juil 2015 – Jan 2016</em>
     </div>
 </div>
 
@@ -114,7 +114,7 @@ Travaillé comme développeur freelance PHP/JavaScript, optimisant l'infrastruct
 <div class="container">
     <h3 class="left">ECV Digital | Enseignant</h3>
     <div class="right">
-        <em>Oct 2015 – Jan 2016 | Lieu : Paris, France</em>
+        <em>Oct 2015 – Jan 2016</em>
     </div>
 </div>
 
@@ -123,7 +123,7 @@ Enseigné deux cours d'un semestre : PHP/MySQL et Algorithm/JavaScript, introdui
 <div class="container">
     <h3 class="left">Explee | Co-fondateur & CTO</h3>
     <div class="right">
-        <em>2012 – 2021 | Lieu : Paris, France</em>
+        <em>2012 – 2021</em>
     </div>
 </div>
 
@@ -137,7 +137,7 @@ Co-fondé la startup Explee en tant que CTO : une plateforme en ligne pour crée
 <div class="container">
     <h4 class="left"> Telecom SudParis - Diplôme d'Ingénieur (MSc en Informatique)</h3>
     <div class="right">
-        <em>2009 - 2012 | Lieu : Evry, France.</em>
+        <em>2009 - 2012</em>
     </div>
 </div>
 
@@ -146,7 +146,7 @@ Grande école d'ingénieurs faisant partie de l'Institut Mines-Télécom
 <div class="container">
     <h4 class="left"> Berthollet - Classes préparatoires</h3>
     <div class="right">
-        <em>2007 - 2009 | Lieu : Annecy, France.</em>
+        <em>2007 - 2009</em>
     </div>
 </div>
 
