@@ -11,8 +11,6 @@
     of ML frameworks (TF, PyTorch, JAX). I Like to train deep nets and
     understand what they are doing under the hood."
     />
-    
-    
 
     <!-- Facebook Meta Tags -->
     <meta property="og:url" content="https://morgangiraud.com" />
@@ -50,7 +48,7 @@
       href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"
     />
     <!-- <link href="public/styles.css" rel="stylesheet" media="all"/> -->
-    <link href="public/styles.min.css" rel="stylesheet" media="all"/>
+    <link href="public/styles.min.css" rel="stylesheet" media="all" />
   </head>
   <body class="bg-gray-200 font-sans leading-8 overflow-x-hidden">
     <!-- Banner: start -->
@@ -116,7 +114,11 @@
               <div
                 class="mt-4 flex items-center justify-center md:justify-start space-x-2"
               >
-                <a href="https://github.com/morgangiraud" target="_blank" aria-label="Morgan Giraud on Github">
+                <a
+                  href="https://github.com/morgangiraud"
+                  target="_blank"
+                  aria-label="Morgan Giraud on Github"
+                >
                   <i
                     class="fa fa-github fa-2x text-gray-800 hover:text-blue-600"
                   ></i>
@@ -130,7 +132,11 @@
                     class="fa fa-linkedin fa-2x text-gray-800 hover:text-blue-600"
                   ></i>
                 </a>
-                <a href="https://twitter.com/morgangiraud/" target="_blank" aria-label="Morgan Giraud on X">
+                <a
+                  href="https://twitter.com/morgangiraud/"
+                  target="_blank"
+                  aria-label="Morgan Giraud on X"
+                >
                   <i
                     class="fa fa-twitter fa-2x text-gray-800 hover:text-blue-600"
                   ></i>
@@ -151,7 +157,10 @@
                     ></path>
                   </svg>
                 </a>
-                <a href="mailto:contact@morgangiraud.com" aria-label="Morgan Giraud's mail">
+                <a
+                  href="mailto:contact@morgangiraud.com"
+                  aria-label="Morgan Giraud's mail"
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 2 24 24"
@@ -207,6 +216,30 @@
 
         <section class="bg-neutral-50 p-8">
           <h3 class="text-xl font-semibold text-gray-800">Work experience</h3>
+
+          <section>
+            <div class="flex mt-4 justify-between">
+              <h3 class="text-left m-0 font-semibold">
+                Kog | ML research engineer
+              </h3>
+              <div
+                class="text-right w-0 h-0 invisible md:w-auto md:h-auto md:visible"
+              >
+                <em>Oct 2024 – ...</em>
+              </div>
+            </div>
+            <p class="justify-center">
+              Leading a team of 3 researchers at
+              <a
+                target="_blank"
+                href="https://www.kog.ai/"
+                class="text-blue-600 hover:text-blue-800"
+              >
+                Kog
+              </a>
+              , working on hardware tailored and optimized LLM architecture.
+            </p>
+          </section>
 
           <section>
             <div class="flex mt-4 justify-between">
@@ -412,8 +445,8 @@
                   </div>
                 </a>
                 <p class="text-gray-700 text-base">
-                  Quick prototype to show how one can use structured output
-                  to engineer a text-to-sql solution.
+                  Quick prototype to show how one can use structured output to
+                  engineer a text-to-sql solution.
                   <a
                     target="_blank"
                     href="https://docs.google.com/presentation/d/1_YgL6AXASSd0Sclw45BpmfnpVyXiaixwSz8bedHvp5o/edit#slide=id.g30287d8ca16_0_7"
@@ -802,12 +835,10 @@
         });
       }*/
 
-
       const currentYear = new Date().getFullYear();
-      const footerYear = document.getElementById('footer-copyright');
+      const footerYear = document.getElementById("footer-copyright");
       footerYear.textContent += ` ${currentYear}`;
     </script>
-
 
     <!-- Google tag (gtag.js) -->
     <script
