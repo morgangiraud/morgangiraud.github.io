@@ -14,7 +14,8 @@ Start tailwind `yarn watch`. Edit the HTML.
 
 ## Only render the CV
 
-To render all CV/cover letter/summary documents in HTML and PDF, run: `yarn build:cv`
+To render all CV/cover letter/summary documents in HTML and PDF, run: `yarn build:cv`.
+To render only HTML (for deterministic CI runs), use: `CV_RENDER_PDF=0 yarn build:cv`.
 
 ## Publish
 

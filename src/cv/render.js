@@ -52,6 +52,7 @@ const style = `\n<style>\n${fs.readFileSync(
 )}\n</style>\n`;
 const template = fs.readFileSync(path.join(__dirname, "template.html"), "utf8");
 const publicDir = path.join(__dirname, "../../public");
+const shouldRenderPdf = process.env.CV_RENDER_PDF !== "0";
 
 const cvDocuments = [
   {
@@ -177,8 +178,12 @@ async function main() {
   console.log("Dumping Summary HTML");
   renderMarkdownDocuments(summaryDocuments);
 
-  console.log("Dumping PDF files");
-  await renderPdfDocuments(allDocuments);
+  if (shouldRenderPdf) {
+    console.log("Dumping PDF files");
+    await renderPdfDocuments(allDocuments);
+  } else {
+    console.log("Skipping PDF generation (CV_RENDER_PDF=0)");
+  }
 }
 
 main().catch((error) => {
