@@ -31,6 +31,7 @@
     "markdown-it-container": "^4.0.0",
     "mustache": "^4.2.0",
     "npm-check-updates": "^19.6.3",
-    "prettier": "^3.8.1"
+    "prettier": "^3.8.1",
+    "puppeteer": "^24.38.0"
   }
 }

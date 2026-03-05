@@ -14,8 +14,7 @@ Start tailwind `yarn watch`. Edit the HTML.
 
 ## Only render the CV
 
-To render the CV in html just run: `yarn build:cv`
-To get it as a pdf, just go print it from your favorite browser.
+To render all CV/cover letter/summary documents in HTML and PDF, run: `yarn build:cv`
 
 ## Publish
 

@@ -63,9 +63,8 @@ Led a remote team of 5 technical professionals at [WoW Studio](https://www.linke
 
 - Remotely led the development of the highly successful WoWG NFT collection.
 - Actively participated in the developer hiring process by conducting interviews and creating technical assessments to evaluate candidates, ensuring a highly skilled team.
-- Delivered [multiple](https://www.worldofwomen.art/) [web application](https://artfest.worldofwomen.art/) by coordinating and supervising developers' work.
-- Established effective processes for task organization, promoting collaboration and transparent communication within the remote team. (main tools: Asana and Github)
-- Served as the main contact for technical matters, offering guidance, support and code reviews to team members to enhance their skills and overall efficiency.
+- Delivered multiple web application by coordinating and supervising developers' work.
+- Established effective processes for task organization, promoting collaboration and transparent communication within the remote team to enhance their skills and overall efficiency.
 
 <div class="container">
     <h3 class="left">Leniax | ML engineer</h3>
