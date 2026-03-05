@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Host: morgangiraud.com
+Sitemap: https://morgangiraud.com/sitemap.xml
