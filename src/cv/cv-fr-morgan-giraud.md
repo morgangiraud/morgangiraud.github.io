@@ -98,6 +98,7 @@ Contributeur à la bibliothèque Open Source pour le Machine Learning chiffré d
 - Développement de fonctions discrétisées pour les réseaux neuronaux, permettant l'entraînement et l'inférence chiffrée.
 
 Autres Contributions :
+
 - Utilisation de GANs pour la compression vidéo (2019)
 - [Apprentissage par renforcement avec des "modèles de mondes"](https://github.com/morgangiraud/openai-rl) (2017)
 - Blogueur sur https://medium.com/@morgangiraud (Sujet principal : ingénierie ML)

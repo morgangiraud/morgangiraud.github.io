@@ -6,9 +6,12 @@
   "license": "MIT",
   "scripts": {
     "build": "yarn build:css && yarn minify:css && yarn build:cv",
-    "build:css": "tailwindcss -i src/main.css -o ./public/style.css",
+    "build:css": "tailwindcss -i src/main.css -o ./public/styles.css",
     "build:cv": "node src/cv/render.js",
-    "watch": "tailwindcss -i src/main.css -o ./public/style.css --watch",
+    "check:js:node": "node --check src/cv/render.js",
+    "check:js:inline": "node src/scripts/check-inline-scripts.js",
+    "check:runtime:cv": "node --unhandled-rejections=strict src/cv/render.js",
+    "watch": "tailwindcss -i src/main.css -o ./public/styles.css --watch",
     "minify:css": "postcss ./public/styles.css -o ./public/styles.min.css",
     "lint": "prettier --check .",
     "format": "prettier --write ."

@@ -1,0 +1,51 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - master
+      - main
+  pull_request:
+
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: yarn
+
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile
+
+      - name: Lint
+        run: yarn lint
+
+      - name: JS syntax check (Node scripts)
+        run: yarn check:js:node
+
+      - name: JS syntax check (inline scripts)
+        run: yarn check:js:inline
+
+      - name: Runtime check (CV renderer)
+        run: yarn check:runtime:cv
+
+      - name: Build CSS
+        run: yarn build:css
+
+      - name: Minify CSS
+        run: yarn minify:css
+
+      - name: Build CV pages
+        run: yarn build:cv
+
+      - name: Full build pipeline
+        run: yarn build
+
+      - name: Verify generated artifacts are up to date
+        run: git diff --exit-code

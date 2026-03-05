@@ -1,8 +1,12 @@
-var hljs = require("highlight.js");
-var mustache = require("mustache");
-var fs = require("fs");
+const fs = require("fs");
+const path = require("path");
+const hljs = require("highlight.js");
+const mustache = require("mustache");
 
-var md = require("markdown-it")({
+const markdownIt = require("markdown-it");
+const markdownItContainer = require("markdown-it-container");
+
+const md = markdownIt({
   html: true,
   breaks: false,
   highlight: function (str, lang) {
@@ -10,141 +14,86 @@ var md = require("markdown-it")({
       return `<div class="mermaid">${str}</div>`;
     }
 
+    let rendered = md.utils.escapeHtml(str);
+
     if (lang && hljs.getLanguage(lang)) {
       try {
-        str = hljs.highlight(lang, str, true).value;
+        rendered = hljs.highlight(str, {
+          language: lang,
+          ignoreIllegals: true,
+        }).value;
       } catch (error) {
-        str = md.utils.escapeHtml(str);
-
-        showErrorMessage("markdown-it:highlight", error);
+        console.error("markdown-it highlight error:", error);
       }
-    } else {
-      str = md.utils.escapeHtml(str);
     }
-    return '<pre class="hljs"><code><div>' + str + "</div></code></pre>";
+
+    return `<pre class="hljs"><code><div>${rendered}</div></code></pre>`;
   },
 });
 
-md.use(require("markdown-it-container"), "", {
+md.use(markdownItContainer, "", {
   validate: function (name) {
-    return name.trim().length;
+    return name.trim().length > 0;
   },
   render: function (tokens, idx) {
-    if (tokens[idx].info.trim() !== "") {
+    if (tokens[idx].nesting === 1) {
       return `<div class="${tokens[idx].info.trim()}">\n`;
-    } else {
-      return `</div>\n`;
     }
+
+    return "</div>\n";
   },
 });
 
-// Read css style file from current script folder
-const style =
-  "\n<style>\n" +
-  fs.readFileSync(__dirname + "/cv-markdown-style.css", "utf8") +
-  "\n</style>\n";
+const style = `\n<style>\n${fs.readFileSync(
+  path.join(__dirname, "cv-markdown-style.css"),
+  "utf8",
+)}\n</style>\n`;
+const template = fs.readFileSync(path.join(__dirname, "template.html"), "utf8");
 
-const template = fs.readFileSync(__dirname + "/template.html", "utf8");
+function renderMarkdownFile(inputFile, outputFile, title) {
+  const markdown = fs.readFileSync(path.join(__dirname, inputFile), "utf8");
+  const content = md.render(markdown);
+  const html = mustache.render(template, { title, style, content });
+  fs.writeFileSync(path.join(__dirname, "../../public", outputFile), html);
+}
 
-/////////////////////////////
-// CV
-/////////////////////////////
-console.log("Dumping CV HTML")
+console.log("Dumping CV HTML");
+renderMarkdownFile(
+  "cv-morgan-giraud.md",
+  "cv-morgan-giraud.html",
+  "CV - Morgan Giraud",
+);
+renderMarkdownFile(
+  "cv-morgan-giraud-short.md",
+  "cv-morgan-giraud-short.html",
+  "CV - Morgan Giraud",
+);
+renderMarkdownFile(
+  "cv-fr-morgan-giraud.md",
+  "cv-fr-morgan-giraud.html",
+  "CV - FR - Morgan Giraud",
+);
 
-// Read mardkown file content
-const text = fs.readFileSync(__dirname + "/cv-morgan-giraud.md", "utf8");
-const textShort = fs.readFileSync(__dirname + "/cv-morgan-giraud-short.md", "utf8");
-const textFr = fs.readFileSync(__dirname + "/cv-fr-morgan-giraud.md", "utf8");
+console.log("Dumping Cover letter HTML");
+renderMarkdownFile(
+  "cl-morgan-giraud.md",
+  "cl-morgan-giraud.html",
+  "Cover letter - Morgan Giraud",
+);
+renderMarkdownFile(
+  "cl-fr-morgan-giraud.md",
+  "cl-fr-morgan-giraud.html",
+  "Cover letter - FR - Morgan Giraud",
+);
 
-const content = md.render(text);
-const contentShort = md.render(textShort);
-const contentFr = md.render(textFr);
-
-var view = {
-  title: "CV - Morgan Giraud",
-  style: style,
-  content: content,
-};
-const html = mustache.render(template, view);
-
-var view = {
-  title: "CV - Morgan Giraud",
-  style: style,
-  content: contentShort,
-};
-const htmlShort = mustache.render(template, view);
-
-var viewFr = {
-  title: "CV - FR - Morgan Giraud",
-  style: style,
-  content: contentFr,
-};
-const htmlFr = mustache.render(template, viewFr);
-
-// Write html down
-fs.writeFileSync(__dirname + "/../../public/cv-morgan-giraud.html", html);
-fs.writeFileSync(__dirname + "/../../public/cv-morgan-giraud-short.html", htmlShort);
-fs.writeFileSync(__dirname + "/../../public/cv-fr-morgan-giraud.html", htmlFr);
-
-
-/////////////////////////////
-// Cover letter
-/////////////////////////////
-
-console.log("Dumping Cover letter HTML")
-
-// Read mardkown file content
-const clText = fs.readFileSync(__dirname + "/cl-morgan-giraud.md", "utf8");
-const clTextFr = fs.readFileSync(__dirname + "/cl-fr-morgan-giraud.md", "utf8");
-
-const clContent = md.render(clText);
-const clContentFr = md.render(clTextFr);
-
-var clView = {
-  title: "Cover letter - Morgan Giraud",
-  style: style,
-  content: clContent,
-};
-const clHtml = mustache.render(template, clView);
-
-var clViewFr = {
-  title: "Cover letter - FR - Morgan Giraud",
-  style: style,
-  content: clContentFr,
-};
-const clHtmlFr = mustache.render(template, clViewFr);
-
-// Write html down
-fs.writeFileSync(__dirname + "/../../public/cl-morgan-giraud.html", clHtml);
-fs.writeFileSync(__dirname + "/../../public/cl-fr-morgan-giraud.html", clHtmlFr);
-
-/////////////////////////////
-// Summary
-/////////////////////////////
-
-console.log("Dumping Summary HTML")
-
-// Read mardkown file content
-const sumText = fs.readFileSync(__dirname + "/summary.md", "utf8");
-const sumTextFr = fs.readFileSync(__dirname + "/summary-fr.md", "utf8");
-
-const sumContent = md.render(sumText);
-const sumContentFr = md.render(sumTextFr);
-
-var sumView = {
-  title: "Summary - EN - Morgan Giraud",
-  style: style,
-  content: sumContent,
-};
-const sumHtml = mustache.render(template, sumView);
-
-var sumViewFr = {
-  title: "Summary - FR - Morgan Giraud",
-  style: style,
-  content: sumContentFr,
-};
-const sumHtmlFr = mustache.render(template, sumViewFr);
-
-// Write html down
-fs.writeFileSync(__dirname + "/../../public/summary.html", sumHtml);
-fs.writeFileSync(__dirname + "/../../public/summary-fr.html", sumHtmlFr);
+console.log("Dumping Summary HTML");
+renderMarkdownFile(
+  "summary.md",
+  "summary.html",
+  "Summary - EN - Morgan Giraud",
+);
+renderMarkdownFile(
+  "summary-fr.md",
+  "summary-fr.html",
+  "Summary - FR - Morgan Giraud",
+);
