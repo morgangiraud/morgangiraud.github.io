@@ -26,5 +26,26 @@ jobs:
       - name: Lint
         run: yarn lint
 
-      - name: Build
+      - name: JS syntax check (Node scripts)
+        run: yarn check:js:node
+
+      - name: JS syntax check (inline scripts)
+        run: yarn check:js:inline
+
+      - name: Runtime check (CV renderer)
+        run: yarn check:runtime:cv
+
+      - name: Build CSS
+        run: yarn build:css
+
+      - name: Minify CSS
+        run: yarn minify:css
+
+      - name: Build CV pages
+        run: yarn build:cv
+
+      - name: Full build pipeline
         run: yarn build
+
+      - name: Verify generated artifacts are up to date
+        run: git diff --exit-code
