@@ -6,8 +6,25 @@ const indexPath = path.join(__dirname, "../../index.html");
 const html = fs.readFileSync(indexPath, "utf8");
 
 const inlineScripts = [
-  ...html.matchAll(/<script\b(?![^>]*\bsrc=)[^>]*>([\s\S]*?)<\/script>/gi),
-].map((match) => match[1]);
+  ...html.matchAll(
+    /<script\b(?![^>]*\bsrc=)(?<attrs>[^>]*)>(?<code>[\s\S]*?)<\/script>/gi,
+  ),
+]
+  .filter((match) => {
+    const attrs = match.groups?.attrs ?? "";
+    const typeAttr = attrs.match(/\btype\s*=\s*["']([^"']+)["']/i);
+    if (!typeAttr) {
+      return true;
+    }
+
+    const type = typeAttr[1].trim().toLowerCase();
+    return (
+      type === "text/javascript" ||
+      type === "application/javascript" ||
+      type === "module"
+    );
+  })
+  .map((match) => match.groups?.code ?? "");
 
 if (inlineScripts.length === 0) {
   console.error("No inline scripts found in index.html");

@@ -3,52 +3,106 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Morgan Giraud</title>
+    <title>Morgan Giraud | ML Engineer & Tech Lead</title>
 
     <meta
       name="description"
-      content="Passionate ML & Web engineer, skilled in Python and its diverse set
-    of ML frameworks (TF, PyTorch, JAX). I Like to train deep nets and
-    understand what they are doing under the hood."
+      content="Morgan Giraud is an ML engineer and tech lead specializing in Python, JAX, PyTorch, TensorFlow, and production web applications for AI."
     />
+    <meta name="author" content="Morgan Giraud" />
+    <meta
+      name="robots"
+      content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+    />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <meta name="theme-color" content="#0369a1" />
+    <link rel="canonical" href="https://morgangiraud.com/" />
+    <link rel="alternate" hreflang="en" href="https://morgangiraud.com/" />
+    <link
+      rel="alternate"
+      hreflang="x-default"
+      href="https://morgangiraud.com/"
+    />
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
 
     <!-- Facebook Meta Tags -->
-    <meta property="og:url" content="https://morgangiraud.com" />
+    <meta property="og:url" content="https://morgangiraud.com/" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Morgan Giraud" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:site_name" content="Morgan Giraud" />
+    <meta
+      property="og:title"
+      content="Morgan Giraud | ML Engineer & Tech Lead"
+    />
     <meta
       property="og:description"
-      content="Passionate ML & Web engineer, skilled in Python and its diverse set
-    of ML frameworks (TF, PyTorch, JAX). I Like to train deep nets and
-    understand what they are doing under the hood."
+      content="Morgan Giraud is an ML engineer and tech lead specializing in Python, JAX, PyTorch, TensorFlow, and production web applications for AI."
     />
     <meta
       property="og:image"
       content="https://en.gravatar.com/userimage/27393472/7691112bbc9c3efd9b9cb6b6657b3ddf.jpg?size=280"
     />
+    <meta property="og:image:alt" content="Portrait of Morgan Giraud" />
 
     <!-- Twitter Meta Tags -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta property="twitter:domain" content="morgangiraud.com" />
-    <meta property="twitter:url" content="https://morgangiraud.com" />
-    <meta name="twitter:title" content="Morgan Giraud" />
+    <meta property="twitter:url" content="https://morgangiraud.com/" />
+    <meta name="twitter:site" content="@morgangiraud" />
+    <meta name="twitter:creator" content="@morgangiraud" />
+    <meta
+      name="twitter:title"
+      content="Morgan Giraud | ML Engineer & Tech Lead"
+    />
     <meta
       name="twitter:description"
-      content="Passionate ML & Web engineer, skilled in Python and its diverse set
-    of ML frameworks (TF, PyTorch, JAX). I Like to train deep nets and
-    understand what they are doing under the hood."
+      content="Morgan Giraud is an ML engineer and tech lead specializing in Python, JAX, PyTorch, TensorFlow, and production web applications for AI."
     />
     <meta
       name="twitter:image"
       content="https://en.gravatar.com/userimage/27393472/7691112bbc9c3efd9b9cb6b6657b3ddf.jpg?size=280"
     />
+    <meta name="twitter:image:alt" content="Portrait of Morgan Giraud" />
 
+    <link rel="preconnect" href="https://en.gravatar.com" crossorigin />
+    <link rel="preconnect" href="https://maxcdn.bootstrapcdn.com" crossorigin />
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"
     />
     <!-- <link href="public/styles.css" rel="stylesheet" media="all"/> -->
     <link href="public/styles.min.css" rel="stylesheet" media="all" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Person",
+            "@id": "https://morgangiraud.com/#person",
+            "name": "Morgan Giraud",
+            "url": "https://morgangiraud.com/",
+            "jobTitle": "ML Engineer & Tech Lead",
+            "email": "mailto:contact@morgangiraud.com",
+            "sameAs": [
+              "https://github.com/morgangiraud",
+              "https://www.linkedin.com/in/morgangiraud/",
+              "https://twitter.com/morgangiraud/",
+              "https://morgangiraud.medium.com/"
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://morgangiraud.com/#website",
+            "url": "https://morgangiraud.com/",
+            "name": "Morgan Giraud",
+            "description": "Portfolio and CV of Morgan Giraud, ML engineer and tech lead.",
+            "author": {
+              "@id": "https://morgangiraud.com/#person"
+            }
+          }
+        ]
+      }
+    </script>
   </head>
   <body class="bg-gray-200 font-sans leading-8 overflow-x-hidden">
     <!-- Banner: start -->
@@ -94,7 +148,7 @@
       </div>
     </div> -->
 
-    <div class="container mx-auto px-4 py-10">
+    <main class="container mx-auto px-4 py-10">
       <div class="rounded-lg shadow-md">
         <section class="bg-neutral-50 p-8 rounded-t-lg">
           <div
@@ -185,7 +239,10 @@
               <img
                 class="w-48 h-48 rounded-full object-cover"
                 src="https://en.gravatar.com/userimage/27393472/7691112bbc9c3efd9b9cb6b6657b3ddf.jpg?size=280"
-                alt="Profile Picture"
+                width="192"
+                height="192"
+                fetchpriority="high"
+                alt="Portrait of Morgan Giraud"
               />
             </div>
           </div>
@@ -444,6 +501,8 @@
             <section class="rounded overflow-hidden shadow-lg">
               <img
                 class="w-full h-48 object-cover"
+                loading="lazy"
+                decoding="async"
                 src="public/images/text-to-sql-proto.png"
                 alt="Text-to-SQL prototype"
               />
@@ -476,6 +535,8 @@
             <section class="rounded overflow-hidden shadow-lg">
               <img
                 class="w-full h-48 object-cover"
+                loading="lazy"
+                decoding="async"
                 src="public/images/cellular-conquest.webp"
                 alt="Cellular conquest"
               />
@@ -511,6 +572,7 @@
               <video
                 class="w-full h-48 object-cover"
                 src="public/images/leniax.mp4"
+                preload="metadata"
                 autoplay
                 loop
                 muted
@@ -551,6 +613,8 @@
             <section class="rounded overflow-hidden shadow-lg">
               <img
                 class="w-full h-48 object-cover"
+                loading="lazy"
+                decoding="async"
                 src="public/images/gll.webp"
                 alt="GLL"
               />
@@ -586,6 +650,8 @@
             <section class="rounded overflow-hidden shadow-lg">
               <img
                 class="w-full h-48 object-cover"
+                loading="lazy"
+                decoding="async"
                 src="public/images/gym-retro.webp"
                 alt="openai-rl"
               />
@@ -616,6 +682,8 @@
             <section class="rounded overflow-hidden shadow-lg">
               <img
                 class="w-full h-48 object-cover"
+                loading="lazy"
+                decoding="async"
                 src="public/images/mps.webp"
                 alt="MPS"
               />
@@ -645,6 +713,8 @@
             <section class="rounded overflow-hidden shadow-lg">
               <img
                 class="w-full h-48 object-cover"
+                loading="lazy"
+                decoding="async"
                 src="public/images/boobabot.webp"
                 alt="Boobabot"
               />
@@ -668,6 +738,8 @@
             <section class="rounded overflow-hidden shadow-lg">
               <img
                 class="w-full h-48 object-cover"
+                loading="lazy"
+                decoding="async"
                 src="public/images/neural_style.webp"
                 alt="Neural style"
               />
@@ -690,6 +762,8 @@
             <section class="rounded overflow-hidden shadow-lg">
               <img
                 class="w-full h-48 object-cover"
+                loading="lazy"
+                decoding="async"
                 src="public/images/hive.webp"
                 alt="Hive"
               />
@@ -711,6 +785,8 @@
             <section class="rounded overflow-hidden shadow-lg">
               <img
                 class="w-full h-48 object-cover"
+                loading="lazy"
+                decoding="async"
                 src="public/images/cubes.webp"
                 alt="cubes"
               />
@@ -850,7 +926,7 @@
           </p>
         </section>
       </div>
-    </div>
+    </main>
 
     <script>
       // Function to get URL parameters
