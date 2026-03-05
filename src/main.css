@@ -1,5 +1,1 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-@import "./fonts/eb-garamond.css";
+@import "tailwindcss";
