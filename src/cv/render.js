@@ -1,7 +1,9 @@
 const fs = require("fs");
 const path = require("path");
+const { pathToFileURL } = require("url");
 const hljs = require("highlight.js");
 const mustache = require("mustache");
+const puppeteer = require("puppeteer");
 
 const markdownIt = require("markdown-it");
 const markdownItContainer = require("markdown-it-container");
@@ -49,51 +51,142 @@ const style = `\n<style>\n${fs.readFileSync(
   "utf8",
 )}\n</style>\n`;
 const template = fs.readFileSync(path.join(__dirname, "template.html"), "utf8");
+const publicDir = path.join(__dirname, "../../public");
+const shouldRenderPdf = process.env.CV_RENDER_PDF !== "0";
+
+const cvDocuments = [
+  {
+    inputFile: "cv-morgan-giraud.md",
+    outputHtmlFile: "cv-morgan-giraud.html",
+    outputPdfFile: "cv-morgan-giraud.pdf",
+    title: "CV - Morgan Giraud",
+  },
+  {
+    inputFile: "cv-morgan-giraud-short.md",
+    outputHtmlFile: "cv-morgan-giraud-short.html",
+    outputPdfFile: "cv-morgan-giraud-short.pdf",
+    title: "CV - Morgan Giraud",
+  },
+  {
+    inputFile: "cv-fr-morgan-giraud.md",
+    outputHtmlFile: "cv-fr-morgan-giraud.html",
+    outputPdfFile: "cv-fr-morgan-giraud.pdf",
+    title: "CV - FR - Morgan Giraud",
+  },
+];
+
+const coverLetterDocuments = [
+  {
+    inputFile: "cl-morgan-giraud.md",
+    outputHtmlFile: "cl-morgan-giraud.html",
+    outputPdfFile: "cl-morgan-giraud.pdf",
+    title: "Cover letter - Morgan Giraud",
+  },
+  {
+    inputFile: "cl-fr-morgan-giraud.md",
+    outputHtmlFile: "cl-fr-morgan-giraud.html",
+    outputPdfFile: "cl-fr-morgan-giraud.pdf",
+    title: "Cover letter - FR - Morgan Giraud",
+  },
+];
+
+const summaryDocuments = [
+  {
+    inputFile: "summary.md",
+    outputHtmlFile: "summary.html",
+    outputPdfFile: "summary.pdf",
+    title: "Summary - EN - Morgan Giraud",
+  },
+  {
+    inputFile: "summary-fr.md",
+    outputHtmlFile: "summary-fr.html",
+    outputPdfFile: "summary-fr.pdf",
+    title: "Summary - FR - Morgan Giraud",
+  },
+];
+
+const allDocuments = [
+  ...cvDocuments,
+  ...coverLetterDocuments,
+  ...summaryDocuments,
+];
 
 function renderMarkdownFile(inputFile, outputFile, title) {
   const markdown = fs.readFileSync(path.join(__dirname, inputFile), "utf8");
   const content = md.render(markdown);
   const html = mustache.render(template, { title, style, content });
-  fs.writeFileSync(path.join(__dirname, "../../public", outputFile), html);
+  fs.writeFileSync(path.join(publicDir, outputFile), html);
 }
 
-console.log("Dumping CV HTML");
-renderMarkdownFile(
-  "cv-morgan-giraud.md",
-  "cv-morgan-giraud.html",
-  "CV - Morgan Giraud",
-);
-renderMarkdownFile(
-  "cv-morgan-giraud-short.md",
-  "cv-morgan-giraud-short.html",
-  "CV - Morgan Giraud",
-);
-renderMarkdownFile(
-  "cv-fr-morgan-giraud.md",
-  "cv-fr-morgan-giraud.html",
-  "CV - FR - Morgan Giraud",
-);
+function renderMarkdownDocuments(documents) {
+  for (const document of documents) {
+    renderMarkdownFile(
+      document.inputFile,
+      document.outputHtmlFile,
+      document.title,
+    );
+  }
+}
 
-console.log("Dumping Cover letter HTML");
-renderMarkdownFile(
-  "cl-morgan-giraud.md",
-  "cl-morgan-giraud.html",
-  "Cover letter - Morgan Giraud",
-);
-renderMarkdownFile(
-  "cl-fr-morgan-giraud.md",
-  "cl-fr-morgan-giraud.html",
-  "Cover letter - FR - Morgan Giraud",
-);
+async function renderPdfDocument(browser, document) {
+  const page = await browser.newPage();
+  try {
+    await page.goto(
+      pathToFileURL(path.join(publicDir, document.outputHtmlFile)).href,
+      {
+        waitUntil: "networkidle0",
+      },
+    );
+    await page.emulateMediaType("print");
+    await page.evaluate(async () => {
+      await document.fonts.ready;
+    });
 
-console.log("Dumping Summary HTML");
-renderMarkdownFile(
-  "summary.md",
-  "summary.html",
-  "Summary - EN - Morgan Giraud",
-);
-renderMarkdownFile(
-  "summary-fr.md",
-  "summary-fr.html",
-  "Summary - FR - Morgan Giraud",
-);
+    await page.pdf({
+      path: path.join(publicDir, document.outputPdfFile),
+      format: "A4",
+      printBackground: true,
+      preferCSSPageSize: true,
+    });
+  } finally {
+    await page.close();
+  }
+}
+
+async function renderPdfDocuments(documents) {
+  const browser = await puppeteer.launch({
+    headless: true,
+    args: ["--no-sandbox", "--disable-setuid-sandbox"],
+  });
+
+  try {
+    for (const document of documents) {
+      await renderPdfDocument(browser, document);
+    }
+  } finally {
+    await browser.close();
+  }
+}
+
+async function main() {
+  console.log("Dumping CV HTML");
+  renderMarkdownDocuments(cvDocuments);
+
+  console.log("Dumping Cover letter HTML");
+  renderMarkdownDocuments(coverLetterDocuments);
+
+  console.log("Dumping Summary HTML");
+  renderMarkdownDocuments(summaryDocuments);
+
+  if (shouldRenderPdf) {
+    console.log("Dumping PDF files");
+    await renderPdfDocuments(allDocuments);
+  } else {
+    console.log("Skipping PDF generation (CV_RENDER_PDF=0)");
+  }
+}
+
+main().catch((error) => {
+  console.error("Failed to render CV documents:", error);
+  process.exitCode = 1;
+});
