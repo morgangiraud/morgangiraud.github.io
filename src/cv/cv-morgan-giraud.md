@@ -41,6 +41,18 @@ Notable experiences:
 ## WORK EXPERIENCE (ordered by date)
 
 <div class="container">
+    <h3 class="left">Kog | ML research engineer</h3>
+    <div class="right">
+        <em>Oct 2024 – ...</em>
+    </div>
+</div>
+
+Leading a team of 3 researchers at [Kog](https://www.kog.ai/) as pretraining lead for hardware co-designed models focused on extreme inference speed.
+
+- Leading pretraining strategy and execution for hardware co-designed model families.
+- Driving architecture and optimization experiments to maximize inference throughput.
+
+<div class="container">
     <h3 class="left">WoW Studio | Tech lead </h3>
     <div class="right">
         <em>Apr 2022 – Nov 2023</em>

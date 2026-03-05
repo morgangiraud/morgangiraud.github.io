@@ -54,6 +54,15 @@ Intensive courses in advanced mathematics and physics, preparing for the highly 
 ## WORK EXPERIENCE (ordered by date)
 
 <div class="container">
+    <h3 class="left">Kog | ML research engineer</h3>
+    <div class="right">
+        <em>Oct 2024 – ...</em>
+    </div>
+</div>
+
+Leading a team of 3 researchers at [Kog](https://www.kog.ai/) as pretraining lead for hardware co-designed models focused on extreme inference speed.
+
+<div class="container">
     <h3 class="left">WoW Studio | Tech lead </h3>
     <div class="right">
         <em>Apr 2022 – Nov 2023</em>

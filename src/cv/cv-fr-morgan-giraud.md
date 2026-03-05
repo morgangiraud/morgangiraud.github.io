@@ -41,6 +41,15 @@ Expériences notables :
 ## EXPÉRIENCE PROFESSIONNELLE (classée par date)
 
 <div class="container">
+    <h3 class="left">Kog | Ingénieur recherche ML</h3>
+    <div class="right">
+        <em>Oct 2024 – ...</em>
+    </div>
+</div>
+
+Direction d'une équipe de 3 chercheurs chez [Kog](https://www.kog.ai/) avec un rôle de lead préentraînement sur des modèles co-conçus avec le hardware pour une vitesse d'inférence extrême.
+
+<div class="container">
     <h3 class="left">WoW Studio | Lead technique </h3>
     <div class="right">
         <em>Avr 2022 – Nov 2023</em>
